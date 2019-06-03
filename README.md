@@ -10,43 +10,48 @@ This is some of the official examples of the SwiftUI layout framework for the fu
 
 Creating And Combining Views
 
-![](images/CreatingAndCombiningViews.png)
+<img src="images/CreatingAndCombiningViews.png" width="80%">
 
 Building Lists And Navigation
 
-![](images/BuildingListsAndNavigation.png)
+<img src="images/BuildingListsAndNavigation.png" width="80%">
 
-HandlingUserInput
 
-![](images/HandlingUserInput.png)
+Handling User Input
+
+<img src="images/HandlingUserInput.png" width="80%">
 
 
 ### Drawing and Animation
 
-DrawingPathsAndShapes
+Drawing Paths And Shapes
 
-![](images/DrawingPathsAndShapes.png)
+<img src="images/DrawingPathsAndShapes.png" width="80%">
 
-AnimatingViewsAndTransitions
 
-![](images/AnimatingViewsAndTransitions.png)
+Animating Views And Transitions
+
+<img src="images/AnimatingViewsAndTransitions.png" width="80%">
+
 
 ### App Design and Layout
 
-ComposingComplexInterfaces
+Composing Complex Interfaces
 
-![](images/ComposingComplexInterfaces.png)
+<img src="images/ComposingComplexInterfaces.png" width="80%">
 
-WorkingWithUIControls
 
-![](images/WorkingWithUIControls.png)
-![](images/WorkingWithUIControls2.png)
+Working With UIControls
+
+<img src="images/WorkingWithUIControls.png" width="80%">
+<img src="images/WorkingWithUIControls2.png" width="80%">
+
 
 ### Framework Integration
 
-InterfacingWithUIKit
+Interfacing With UIKit
 
-![](images/InterfacingWithUIKit.png)
+<img src="images/InterfacingWithUIKit.png" width="80%">
 
 
 
@@ -56,9 +61,9 @@ If you have a better reference example, look forward to sharing it and working h
 
 ## Contacts
 
-#### email : hi@jinxiansen.com
-#### Sina : [@晋先森](http://weibo.com/3205872327)
+email : hi@jinxiansen.com
 
+微博 : [@晋先森](http://weibo.com/3205872327)
 
 ## License	
 

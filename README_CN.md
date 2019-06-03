@@ -1,5 +1,5 @@
 
-`SwiftUI` 是一种为 **Apple** 所有平台创建用户界面的现代化框架，以前所未有的速度创建漂亮，动态的应用程序。
+`SwiftUI` 是一种为 Apple **所有平台** 创建用户界面的现代化框架，以前所未有的速度创建漂亮，动态的应用程序。
 
 这是关于今天 [**WWDC2019**](https://www.apple.com/ios/ios-13-preview/) 发布的 `SwiftUI` 布局框架的一些官方示例，希望对你了解和学习这门新布局框架有所帮助！
 
@@ -53,8 +53,9 @@
 
 ## Contacts
 
-#### email : hi@jinxiansen.com
-#### Sina : [@晋先森](http://weibo.com/3205872327)
+email : hi@jinxiansen.com
+
+微博 : [@晋先森](http://weibo.com/3205872327)
 
 
 ## License	
