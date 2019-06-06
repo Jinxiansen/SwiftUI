@@ -3,6 +3,12 @@
 
 这是关于今天 [**WWDC2019**](https://www.apple.com/ios/ios-13-preview/) 发布的 `SwiftUI` 布局框架的一些官方示例，希望对你了解和学习这门新布局框架有所帮助！
 
+### 💻 必要环境
+
+- macOS 15 Beta
+- Xcode 11.0 Beta
+- iOS 13.0 Beta
+- 
 ### SwiftUI Essentials
 
 * 创建和组合视图
@@ -51,13 +57,13 @@
 
 如果你有更好的参考示例，期待与我们分享，为开源而努力!
 
-## Contacts
+## ✉️ Contacts
 
 email : hi@jinxiansen.com
 
 微博 : [@晋先森](http://weibo.com/3205872327)
 
 
-## License	
+## 📄 License	
 
 SwiftUI is released under the [MIT license](LICENSE). See LICENSE for details.

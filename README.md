@@ -6,6 +6,12 @@
 This is some of the official examples of the SwiftUI layout framework for the full platform of the apple released by [**WWDC2019**](https://www.apple.com/ios/ios-13-preview/) today. I hope to help you understand and learn this new layout framework!
 
 
+### 💻 Requirements
+
+- macOS 15 Beta
+- Xcode 11.0 Beta
+- iOS 13.0 Beta
+
 ### SwiftUI Essentials
 
 Creating And Combining Views
@@ -59,12 +65,12 @@ For more information, please visit [SwiftUI Website:](https://developer.apple.co
 
 If you have a better reference example, look forward to sharing it and working hard for open source!
 
-## Contacts
+## ✉️Contacts
 
 email : hi@jinxiansen.com
 
 微博 : [@晋先森](http://weibo.com/3205872327)
 
-## License	
+## 📄 License	
 
 SwiftUI is released under the [MIT license](LICENSE). See LICENSE for details.
