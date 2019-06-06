@@ -65,7 +65,7 @@ For more information, please visit [SwiftUI Website:](https://developer.apple.co
 
 If you have a better reference example, look forward to sharing it and working hard for open source!
 
-## ✉️Contacts
+## ✉️ Contacts
 
 email : hi@jinxiansen.com
 
