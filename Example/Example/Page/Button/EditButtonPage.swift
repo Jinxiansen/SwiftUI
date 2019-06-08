@@ -1,0 +1,65 @@
+//
+//  EditButtonPage.swift
+//  Example
+//
+//  Created by 晋先森 on 2019/6/8.
+//  Copyright © 2019 晋先森. All rights reserved.
+//
+
+import SwiftUI
+import Combine
+
+struct EditButtonPage : View {
+
+    @ObjectBinding private var source = dataSource()
+    
+    var body: some View {
+        List {
+            ForEach(source.items) { idx in
+                PageRow(title: "\(idx)")
+                }
+                .onDelete(perform: deletePlace)
+                .onMove(perform: movePlace)
+            }
+            .navigationBarTitle(Text("Edit Row"), displayMode: .large)
+            .navigationBarItems(trailing: EditButton())
+    }
+    
+    func deletePlace(at offset: IndexSet) {
+        if let last = offset.last?.id {
+            source.items.remove(at: last)
+            print(source.items.count)
+        }
+    }
+    
+    func movePlace(from source: IndexSet, to destination: Int) {
+        print(source,destination)
+    }
+    
+}
+
+
+class dataSource: BindableObject {
+    
+    public var items: [Int] {
+        didSet {
+            didChange.send(())
+        }
+    }
+    
+    public var didChange = PassthroughSubject<Void, Never>()
+    
+    init() {
+        self.items = (0..<10).map { $0 }
+    }
+    
+}
+
+
+#if DEBUG
+struct EditButtonPage_Previews : PreviewProvider {
+    static var previews: some View {
+        EditButtonPage()
+    }
+}
+#endif
