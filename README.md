@@ -433,6 +433,13 @@ presentation($showsAlert, alert: {
 
 -- Stay tuned!
 
+
+
+## 📎 About
+
+* The code involved in the above example is in this repository code. It is recommended to download and run the view.
+* If you have better usage and suggestions about SwiftUI, look forward to sharing it!
+* If there are omissions and errors in the examples in this article,  please create a [**Issue**](https://github.com/Jinxiansen/SwiftUI/issues/new) !
  
 
 
