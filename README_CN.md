@@ -1,5 +1,4 @@
-
-<img src="images/icon/top.png"/>
+<img src="images/icon/banner.png"/>
 
 [![Build Status](https://img.shields.io/badge/platforms-iOS%20%7C%20tvOS%20%7C%20macOS%20%7C%20watchOS-lightgrey.svg)](https://github.com/Jinxiansen/SwiftUI)
 [![Swift](https://img.shields.io/badge/Swift-5.1-orange.svg)](https://swift.org)
