@@ -17,7 +17,7 @@ struct ButtonPage : View {
             Text("I'm a Button").bold()
                 .font(.system(size: 40,design: .rounded))
                 .shadow(radius: 1)
-        }
+        }.navigationBarTitle(Text("Button"))
     }
 }
 

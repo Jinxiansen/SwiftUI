@@ -111,7 +111,7 @@ When learning and using `SwiftUI`, if you have any questions, you can join the S
 * Preferences
 	* [LocalizedStringKey](#LocalizedStringKey)
 
-Transactions
+* Transactions
 	* [Transaction](#Transaction)
 
 
@@ -178,9 +178,9 @@ TextField(self.$name, placeholder: self.nameText, onEditingChanged: { changed in
     print("userName: \(self.name)")
     self.endEditing(true)
 }}
-.padding(10) 
+.padding(10)
 .frame(height: 50)
-.border(self.style, width: 1, cornerRadius: 5)
+.textFieldStyle(.roundedBorder)
 .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
 
 ```
@@ -428,14 +428,139 @@ presentation($showsAlert, alert: {
 ```
 
 <details close>
-  <summaryView running results</summary>
+  <summary>View running results</summary>
 <img width="80%" src="images/example/Alert.png"/>
 </details>
 
 
 ### Layout 
 
-Stay tuned!
+
+<h4 id="HStack"> HStack </h4>
+
+`HStack` is used to arrange the subviews on a horizontal line. 
+
+Example:
+
+```swift
+HStack {
+    Text("made in China.")
+    Divider() // Just add a line.
+    Text("the People's Republic Of China.")
+}
+```
+
+<details close>
+  <summary>View running results</summary>
+<img width="80%" src="images/example/HStack.png"/>
+</details>
+
+
+<h4 id="VStack"> VStack </h4>
+
+`VStack` is used to arrange the subviews on a vertical line.
+
+Example:
+
+```swift
+VStack {
+    Text("made in China.")
+    Divider() // Just add a line.
+    Text("the People's Republic Of China.")
+}
+```
+
+<details close>
+  <summary>View running results</summary>
+<img width="80%" src="images/example/VStack.png"/>
+</details>
+
+<h4 id="ZStack"> ZStack </h4>
+
+`ZStack` is used to override the subview, aligned on two axes.
+
+Example:
+
+```swift
+ZStack {
+    Text("made in China.")
+    Divider() // Just add a line.
+    Text("the People's Republic Of China.")
+}
+```
+
+<details close>
+  <summary>View running results</summary>
+<img width="80%" src="images/example/ZStack.png"/>
+</details>
+
+
+
+<h4 id="List"> List </h4>
+
+`List` list container to display a list of data.
+
+Examples:
+
+```swift
+List(0..<5) { item in
+    Text("Hello World !")
+}.navigationBarTitle(Text("List"), displayMode: .large)
+```
+
+<details close>
+  <summary>View running results</summary>
+<img width="80%" src="images/example/List.png"/>
+</details>
+
+
+<h4 id="ScrollView"> ScrollView </h4>
+
+`ScrollView` is a scroll view container.
+
+Example:
+
+```swift
+ScrollView {
+    Text("SwiftUI").padding(20)
+    Divider()
+    Image("icon").resizable()
+        .frame(width: 300, height: 300, alignment: .center)
+    Divider()
+    Text("Views and ... user interface.")
+    }
+    .border(style, width: 1,cornerRadius: 10)
+    .padding(10)
+    .navigationBarTitle(Text("ScrollView"))
+```
+
+<details close>
+  <summary>View running results</summary>
+<img width="80%" src="images/example/ScrollView.png"/>
+</details>
+
+<h4 id="ForEach"> ForEach </h4>
+
+`ForEach` is used to present a view based on a collection of existing data.
+
+Example:
+
+```swift
+let data = (0..<5).map { $0 }
+var body: some View {
+    ForEach(data) { e in
+        Text("Hello \(e)")
+            .bold()
+            .font(.system(size: 25, design: .monospaced))
+            .padding(5)
+}
+```
+
+<details close>
+  <summary>View running results</summary>
+<img width="80%" src="images/example/ForEach.png"/>
+</details>
+
 
 
 

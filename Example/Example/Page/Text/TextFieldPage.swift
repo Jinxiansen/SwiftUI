@@ -13,9 +13,8 @@ struct TextFieldPage : View {
     @State var name: String = ""
     @State var password: String = ""
     
-    let style = AngularGradient(gradient: Gradient(colors: [.secondary]), center: .center)
-    let nameText = Text("请填入昵称").color(.secondary).font(.system(size: 20))
-    let pwdText = Text("请填入密码").color(.secondary).font(.system(size: 20))
+    let nameText = Text("请填入昵称").color(.secondary).font(.system(size: 16))
+    let pwdText = Text("请填入密码").color(.secondary).font(.system(size: 16))
     
     var body: some View {
         VStack(spacing: 15) {
@@ -29,7 +28,7 @@ struct TextFieldPage : View {
                 }}
                 .padding(10) // 内间距
                 .frame(height: 50)
-                .border(self.style, width: 1, cornerRadius: 5)
+                .textFieldStyle(.roundedBorder)
                 .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
             
             HStack {
@@ -40,10 +39,11 @@ struct TextFieldPage : View {
                 }}
                 .padding(10)
                 .frame(height: 50)
-                .border(self.style, width: 1, cornerRadius: 5)
+                .textFieldStyle(.roundedBorder)
                 .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
             
             }.offset(y: -150)
+            .navigationBarTitle(Text("TextField"))
     }
     
     private func endEditing(_ force: Bool) {

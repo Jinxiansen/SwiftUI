@@ -11,7 +11,7 @@ import SwiftUI
 struct ListPage : View {
     var body: some View {
         List(0..<5) { item in
-            Text("Hello World!")
+            Text("Hello World !")
         }.navigationBarTitle(Text("List"), displayMode: .large)
     }
 }

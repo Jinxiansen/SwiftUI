@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import SafariServices
 
 let github = "https://github.com/Jinxiansen/SwiftUI"
 

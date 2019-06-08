@@ -179,11 +179,10 @@ TextField(self.$name, placeholder: self.nameText, onEditingChanged: { changed in
     print("userName: \(self.name)")
     self.endEditing(true)
 }}
-.padding(10) 
+.padding(10)
 .frame(height: 50)
-.border(self.style, width: 1, cornerRadius: 5)
+.textFieldStyle(.roundedBorder)
 .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
-
 ```
 
 <details close>
@@ -199,7 +198,9 @@ TextField(self.$name, placeholder: self.nameText, onEditingChanged: { changed in
 
 <h4 id="Image"> Image </h4>
 
-`Image` 控件用于展示图片，示例：
+`Image` 控件用于展示图片。
+
+示例：
 
 ```swift
 Image("icon")
@@ -240,7 +241,9 @@ Button(action: {
 
 <h4 id="NavigationButton"> NavigationButton </h4>
 
-`NavigationButtonPage ` 用以 Push 到下一个导航页面，示例：
+`NavigationButtonPage ` 用以 Push 到下一个导航页面。
+
+示例：
 
 ```swift
 NavigationButton(destination: NavigationButtonPage()) {
@@ -256,7 +259,9 @@ NavigationButton(destination: NavigationButtonPage()) {
 
 <h4 id="PresentationButton"> PresentationButton </h4>
 
-`PresentationButton` 用以弹出一个页面，示例：
+`PresentationButton` 用以弹出一个页面。
+
+示例：
 
 ```swift
 PresentationButton(PageRow(title: "PresentationButton", subTitle: "触发时显示内容的按钮控件"),
@@ -273,7 +278,9 @@ PresentationButton(PageRow(title: "PresentationButton", subTitle: "触发时显�
 
 <h4 id="EditButton"> EditButton </h4>
 
-`EditButton` 用以触发编辑状态，使用时只需在 `navigationBarItems ` 设置即可，示例：
+`EditButton` 用以触发编辑状态，使用时只需在 `navigationBarItems ` 设置即可。
+
+示例：
 
 ```swift
 navigationBarItems(trailing: EditButton())
@@ -294,7 +301,9 @@ navigationBarItems(trailing: EditButton())
 
 <h4 id="DatePicker"> DatePicker </h4>
 
-`DatePicker` 用于选择绝对日期的控件，示例：
+`DatePicker` 用于选择绝对日期的控件。
+
+示例：
 
 ```swift
 DatePicker(
@@ -318,7 +327,9 @@ DatePicker(
 
 <h4 id="Toggle"> Toggle </h4>
 
-`Toggle` 用于切换选中状态，示例：
+`Toggle` 用于切换选中状态。
+
+示例：
 
 ```swift
 Toggle(isOn: $isOn) {
@@ -334,7 +345,9 @@ Toggle(isOn: $isOn) {
 
 <h4 id="Slider"> Slider </h4>
 
-`Slider ` 用于从有限值范围中选值的控件，示例：
+`Slider ` 用于从有限值范围中选值的控件。
+
+示例：
 
 ```swift
 Slider(value: $data.rating)
@@ -348,7 +361,9 @@ Slider(value: $data.rating)
 
 <h4 id="Stepper"> Stepper </h4>
 
-`Stepper ` 用以增加或减少数值，示例：
+`Stepper ` 用以增加或减少数值。
+
+示例：
 
 ```swift
 Stepper(value: $value, step: 2, onEditingChanged: { c in
@@ -367,7 +382,9 @@ Stepper(value: $value, step: 2, onEditingChanged: { c in
 
 <h4 id="SegmentedControl"> SegmentedControl </h4>
 
-`SegmentedControl` 用以分段条件选择，示例：
+`SegmentedControl` 用以分段条件选择。
+
+示例：
 
 ```swift
 SegmentedControl(selection: $currentIndex) {
@@ -388,7 +405,9 @@ SegmentedControl(selection: $currentIndex) {
 
 <h4 id="WebView"> WebView </h4>
 
-`WebView` 用于展示一个打开的网页, 示例:
+`WebView` 用于展示一个打开的网页。
+
+示例:
 
 ```swift
 struct WebViewPage : UIViewRepresentable {
@@ -410,7 +429,9 @@ struct WebViewPage : UIViewRepresentable {
 
 <h4 id="Alert"> Alert </h4>
 
-`Alert` 用于展示一个弹框提醒，需要与点击事件关联起来, 示例:
+`Alert` 用于展示一个弹框提醒，需要与点击事件关联起来。
+
+示例:
 
 ```swift
 presentation($showsAlert, alert: {
@@ -426,9 +447,130 @@ presentation($showsAlert, alert: {
 
 ### 布局 
 
-敬请期待！
+<h4 id="HStack"> HStack </h4>
+
+`HStack` 用于将子视图排列在水平线上的视图。
+
+示例:
+
+```swift
+HStack {
+    Text("made in China.")
+    Divider() // Just add a line.
+    Text("the People's Republic Of China.")
+}
+```
+
+<details close>
+  <summary>查看运行效果</summary>
+<img width="80%" src="images/example/HStack.png"/>
+</details>
 
 
+<h4 id="VStack"> VStack </h4>
+
+`VStack` 用于将子视图排列在垂直线上的视图。
+
+示例:
+
+```swift
+VStack {
+    Text("made in China.")
+    Divider() // Just add a line.
+    Text("the People's Republic Of China.")
+}
+```
+
+<details close>
+  <summary>查看运行效果</summary>
+<img width="80%" src="images/example/VStack.png"/>
+</details>
+
+<h4 id="ZStack"> ZStack </h4>
+
+`ZStack` 用于覆盖子视图，在两轴上对齐。
+
+示例:
+
+```swift
+ZStack {
+    Text("made in China.")
+    Divider() // Just add a line.
+    Text("the People's Republic Of China.")
+}
+```
+
+<details close>
+  <summary>查看运行效果</summary>
+<img width="80%" src="images/example/ZStack.png"/>
+</details>
+
+
+
+<h4 id="List"> List </h4>
+
+`List` 列表容器，用以显示一列数据。
+
+示例:
+
+```swift
+List(0..<5) { item in
+    Text("Hello World !")
+}.navigationBarTitle(Text("List"), displayMode: .large)
+```
+
+<details close>
+  <summary>查看运行效果</summary>
+<img width="80%" src="images/example/List.png"/>
+</details>
+
+
+<h4 id="ScrollView"> ScrollView </h4>
+
+`ScrollView` 是一个滚动视图容器。
+
+示例:
+
+```swift
+ScrollView {
+    Text("SwiftUI").padding(20)
+    Divider()
+    Image("icon").resizable()
+        .frame(width: 300, height: 300, alignment: .center)
+    Divider()
+    Text("Views and ... user interface.")
+    }
+    .border(style, width: 1,cornerRadius: 10)
+    .padding(10)
+    .navigationBarTitle(Text("ScrollView"))
+```
+
+<details close>
+  <summary>查看运行效果</summary>
+<img width="80%" src="images/example/ScrollView.png"/>
+</details>
+
+<h4 id="ForEach"> ForEach </h4>
+
+`ForEach` 用于根据已有数据的集合展示视图。
+
+示例:
+
+```swift
+let data = (0..<5).map { $0 }
+var body: some View {
+    ForEach(data) { e in
+        Text("Hello \(e)")
+            .bold()
+            .font(.system(size: 25, design: .monospaced))
+            .padding(5)
+}
+```
+
+<details close>
+  <summary>查看运行效果</summary>
+<img width="80%" src="images/example/ForEach.png"/>
+</details>
 
 
 ## 📎 About

@@ -15,7 +15,10 @@ struct ForEachPage : View {
     
     var body: some View {
         ForEach(data) { e in
-            Text("Hello \(e)").bold().font(.system(size: 25, design: .monospaced)).padding(5)
+            Text("Hello \(e)")
+                .bold()
+                .font(.system(size: 25, design: .monospaced))
+                .padding(5)
             }.border(style, width: 1,cornerRadius: 10)
     }
 }

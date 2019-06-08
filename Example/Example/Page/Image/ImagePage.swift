@@ -22,7 +22,7 @@ struct ImagePage : View {
                         print("Tap \(index)")
                 }
             })
-        }
+        }.navigationBarTitle(Text("Image"))
     }
 }
 
