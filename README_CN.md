@@ -1,13 +1,21 @@
 
 <img src="images/icon/top.png"/>
 
-本文参考[官方文档](https://developer.apple.com/tutorials/swiftui)及学习心得记录于此，希望能够对你有所帮助。 
+[![Build Status](https://img.shields.io/badge/platforms-iOS%20%7C%20tvOS%20%7C%20macOS%20%7C%20watchOS-lightgrey.svg)](https://github.com/Jinxiansen/SwiftUI)
+[![Swift](https://img.shields.io/badge/Swift-5.1-orange.svg)](https://swift.org)
+[![Xcode](https://img.shields.io/badge/Xcode-11.0-blue.svg)](https://developer.apple.com/xcode)
+[![Xcode](https://img.shields.io/badge/macOS-15.0-blue.svg)](https://developer.apple.com/macOS)
+[![MIT](https://img.shields.io/badge/licenses-GPL3.0-red.svg)](https://opensource.org/licenses/GPL-3.0)
 
-本文不会详细的叙述每个细节，如果对 Swift 语法有疑问，建议先从头学习 [Swift](https://swift.org) 语法。
+本文参考 [官方示例](https://github.com/Jinxiansen/SwiftUI/tree/doc) 及学习心得记录于此，希望能够对你有所帮助。 
 
-了解和使用 `SwiftUI` 过程中，如果有疑问之处，可加入 SwiftUI QQ 交流群：816138215 ，共同交流。
+对于本文所述内容，默认你已有一定的基于 Swift 语言的开发经验，故不会详细的叙述每个细节；如果对 Swift 语法有疑问，可先学习 [Swift](https://swift.org) 语法。
 
-[苹果🍎 SwiftU 示例](https://github.com/Jinxiansen/SwiftUI/tree/doc)
+在了解和使用 `SwiftUI` 过程中，如果有疑问之处，可加入 SwiftUI QQ 交流群：816138215 ，共同交流。
+
+[English 🅴](README.md)
+
+### [Whats New in SwiftUI?](https://developer.apple.com/xcode/swiftui/)
 
 
 ### 💻 SwiftUI 所需环境
@@ -419,7 +427,7 @@ presentation($showsAlert, alert: {
 
 ### 布局 
 
--- 敬请期待！
+敬请期待！
 
 
 
