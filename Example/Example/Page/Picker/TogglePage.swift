@@ -11,14 +11,14 @@ import Combine
 struct TogglePage : View {
     
     @State var isOn = false
-
+    
     var body: some View {
         HStack {
             Toggle(isOn: $isOn) {
                 Text("State: \(self.isOn == true ? "开":"关")")
-            }.padding(20)
+                }.padding(20)
             Spacer()
-        }.navigationBarTitle(Text("Toggle"))
+            }.navigationBarTitle(Text("Toggle"))
     }
 }
 

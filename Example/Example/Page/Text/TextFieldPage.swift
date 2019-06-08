@@ -54,7 +54,6 @@ struct TextFieldPage : View {
 // https://stackoverflow.com/questions/56491386/how-to-hide-keyboard-when-using-swiftui
 
 
-
 #if DEBUG
 struct TextFieldPage_Previews : PreviewProvider {
     static var previews: some View {

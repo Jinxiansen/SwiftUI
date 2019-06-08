@@ -18,8 +18,7 @@ struct SliderPage : View {
             Text("Slider Value: \(self.rating)")
             Slider(value: $rating)
                 .padding(30)
-        }.navigationBarTitle(Text("Slider"))
-
+            }.navigationBarTitle(Text("Slider"))
     }
 }
 

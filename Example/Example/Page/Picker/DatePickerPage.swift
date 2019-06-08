@@ -11,10 +11,8 @@ import Combine
 struct DatePickerPage : View {
     
     @ObjectBinding var server = DateServer()
-    private let items = (0..<10).map { "\($0)" }
     
     var body: some View {
-        
         VStack(alignment: .center, spacing: 10) {
             Text("日期选择").bold()
             DatePicker(
@@ -34,7 +32,7 @@ struct DatePickerPage : View {
 
 
 class DateServer: BindableObject {
-
+    
     var didChange = PassthroughSubject<DateServer,Never>()
     var date: Date = Date() {
         didSet {

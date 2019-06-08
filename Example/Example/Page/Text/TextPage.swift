@@ -8,6 +8,7 @@
 
 import SwiftUI
 import SafariServices
+
 let github = "https://github.com/Jinxiansen/SwiftUI"
 
 struct TextPage : View {
@@ -29,13 +30,13 @@ struct TextPage : View {
                 .underline(true, color: Color.gray)
                 .font(.system(size: 16, design: .serif)).tapAction {
                     print(github)
-                }
+            }
             
             HStack {
                 Text("Text")
                 Text("TextField").bold()
                 Text("SecureField").color(.orange)
-                }
+            }
             
             Text("Views and controls are the visual building blocks of your app’s user interface." +
                 " Use them to present your app’s content onscreen.")

@@ -20,7 +20,7 @@ struct StepperPage : View {
             }) {
                 Text("Stepper Value: \(self.value)")
                 }.padding(50)
-        }.navigationBarTitle(Text("Stepper"))
+            }.navigationBarTitle(Text("Stepper"))
     }
 }
 

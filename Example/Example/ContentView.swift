@@ -33,14 +33,13 @@ struct ContentView : View {
                     NavigationButton(destination: ImagePage()) {
                         PageRow(title: "Image",subTitle: "用以展示本地图片")
                     }
-                    
                     NavigationButton(destination: WebViewPage()) {
                         PageRow(title: "WebView",subTitle: "用于展示一个打开的网页")
                     }
                     NavigationButton(destination: AlertPage()) {
                         PageRow(title: "Alert",subTitle: "用于展示一个弹框提醒")
                     }
-
+                    
                 }
                 
                 Section(header: Text("按钮")) {

@@ -10,7 +10,7 @@ import SwiftUI
 import Combine
 
 struct EditButtonPage : View {
-
+    
     @ObjectBinding private var source = dataSource()
     
     var body: some View {
@@ -35,24 +35,22 @@ struct EditButtonPage : View {
     func movePlace(from source: IndexSet, to destination: Int) {
         print(source,destination)
     }
-    
 }
 
 
 class dataSource: BindableObject {
     
+    public var didChange = PassthroughSubject<Void, Never>()
+
     public var items: [Int] {
         didSet {
             didChange.send(())
         }
     }
     
-    public var didChange = PassthroughSubject<Void, Never>()
-    
     init() {
         self.items = (0..<10).map { $0 }
     }
-    
 }
 
 
