@@ -6,13 +6,13 @@
 [![Xcode](https://img.shields.io/badge/macOS-15.0-blue.svg)](https://developer.apple.com/macOS)
 [![MIT](https://img.shields.io/badge/licenses-GPL3.0-red.svg)](https://opensource.org/licenses/GPL-3.0)
 
-本文参考 [官方示例](https://github.com/Jinxiansen/SwiftUI/tree/doc) 及学习心得记录于此，希望能够对你有所帮助。 
+本文参考 SwiftUI [官方示例](https://github.com/Jinxiansen/SwiftUI/tree/doc) 并将探索结果记录于此，希望能够对你有所帮助。 
 
 对于本文所述内容，默认你已有一定的基于 Swift 语言的开发经验，故不会详细的叙述每个细节；如果对 Swift 语法有疑问，可先学习 [Swift](https://swift.org) 语法。
 
 在了解和使用 `SwiftUI` 过程中，如果有疑问之处，可加入 SwiftUI QQ 交流群：816138215 ，共同交流。
 
-[English 🅴](README.md)
+[English 📔](README.md)
 
 ### [Whats New in SwiftUI?](https://developer.apple.com/xcode/swiftui/)
 
