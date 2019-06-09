@@ -17,7 +17,12 @@
 ### [Whats New in SwiftUI?](https://developer.apple.com/xcode/swiftui/)
 
 
-### 💻 SwiftUI 所需环境
+## 截图
+|example| example |
+|:---:|:---:|:---:|
+|<img src="images/screenshot/x1.jpg"/>|<img src="images/screenshot/x2.jpg"/>|![image](gif/3.gif)|
+
+## 💻 所需环境
 
 - macOS 15 Beta
 - Xcode 11.0 Beta
