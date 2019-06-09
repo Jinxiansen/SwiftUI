@@ -22,7 +22,7 @@ struct WebImagePage : View {
                    alignment: .center)
             .tapAction {
                 print("Tap ")
-        }
+        }.navigationBarTitle(Text("WebImage"))
     }
     
     func downloadWebImage() {

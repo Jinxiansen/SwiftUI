@@ -8,13 +8,6 @@
 
 import SwiftUI
 
-extension View {
-    
-    static var name: String {
-        return String(describing: self)
-    }
-}
-
 struct ContentView : View {
     
     var body: some View {
@@ -46,7 +39,6 @@ struct ContentView : View {
                 }
                 
                 Section(header: Text("按钮")) {
-                    
                     NavigationButton(destination: ButtonPage()) {
                         PageRow(title: "Button",subTitle: "触发时执行操作的按钮")
                     }
@@ -100,8 +92,14 @@ struct ContentView : View {
                     NavigationButton(destination: ForEachPage()) {
                         PageRow(title: "ForEach",subTitle: "用于根据已有数据的集合展示视图")
                     }
+                    NavigationButton(destination: GroupPage()) {
+                        PageRow(title: "Group",subTitle: "用于集合多个视图，对 Group 设置的属性，将作用于每个子视图")
+                        }.frame(height: 80)
+                    
+                    NavigationButton(destination: SectionPage()) {
+                        PageRow(title: "Section",subTitle: "用于创建带头/尾部的视图内容，一般结合 `List` 组件使用")
+                        }.frame(height: 80)
                 }
-                
                 }.listStyle(.grouped)
                 .navigationBarTitle(Text("Example"), displayMode: .large)
         }
@@ -117,3 +115,4 @@ struct ContentView_Previews : PreviewProvider {
     }
 }
 #endif
+

@@ -14,7 +14,7 @@ struct TabBarPage : View {
             Text("Tab 1!").tabItemLabel(Text("Tab 1")).tag(1)
             Text("Tab 2!").tabItemLabel(Text("Tab 2")).tag(2)
             Text("Tab 3!").tabItemLabel(Text("Tab 3")).tag(2)
-        }
+        }.navigationBarTitle(Text("TabBar"))
     }
 }
 

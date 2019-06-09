@@ -22,7 +22,7 @@ struct PageRow : View {
         VStack(alignment: .leading, spacing: 5) {
             Text(title).bold()
             if subTitle != nil {
-                Text(subTitle!).font(.system(size: 14)).opacity(0.7)
+                Text(subTitle!).font(.subheadline).opacity(0.5).lineLimit(nil)
             }
         }
     }

@@ -22,7 +22,7 @@ struct AlertPage : View {
                               design: .rounded))
             }.presentation($showsAlert, alert: {
                 Alert(title: Text("Hello"))
-            })
+            }).navigationBarTitle(Text("Alert"))
     }
 }
 

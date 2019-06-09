@@ -603,6 +603,50 @@ var body: some View {
 </details>
 
 
+<h4 id="Group"> Group </h4>
+
+`Group` 用于集合多个视图，对 Group 设置的属性，将作用于每个子视图。
+
+示例:
+
+```swift
+Group {
+    Text("Hello World !")
+    Text("Hello World !")
+    }
+```
+
+<details close>
+  <summary>查看运行效果</summary>
+<img width="80%" src="images/example/Group.png"/>
+</details>
+
+
+<h4 id="GroupBox"> GroupBox </h4>
+
+尚未发布
+
+
+<h4 id="Section"> Section </h4>
+
+`Section` 用于创建带头/尾部的视图内容，一般结合 `List` 组件使用。
+
+示例:
+
+```swift
+Section(header: Text("I'm header"), footer: Text("I'm footer")) {
+    ForEach(0..<3) {
+        Text("Hello \($0)")
+    }
+}
+```
+
+<details close>
+  <summary>查看运行效果</summary>
+<img width="80%" src="images/example/Section.png"/>
+</details>
+
+
 ## 📎 About
 
 * 以上示例中所涉及代码，皆在本仓库代码中，建议下载并运行查看。

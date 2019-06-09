@@ -27,6 +27,7 @@ struct DatePickerPage : View {
             )
             }
             .padding(.top)
+            .navigationBarTitle(Text("DatePicker"))
     }
 }
 

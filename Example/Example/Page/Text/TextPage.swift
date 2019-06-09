@@ -11,9 +11,7 @@ import SwiftUI
 let github = "https://github.com/Jinxiansen/SwiftUI"
 
 struct TextPage : View {
-    
-    let style = AngularGradient(gradient: Gradient(colors: [.red]), center: .center)
-    
+        
     var body: some View {
         VStack(spacing: 15) {
             Text("SwiftUI")

@@ -591,6 +591,48 @@ var body: some View {
 </details>
 
 
+<h4 id="Group"> Group </h4>
+
+`Group` is used to aggregate multiple views, and the properties set on the Group will be applied to each child view.
+
+Example:
+
+```swift
+Group {
+    Text("Hello World !")
+    Text("Hello World !")
+    }
+```
+
+<details close>
+  <summary>View running results</summary>
+<img width="80%" src="images/example/Group.png"/>
+</details>
+
+
+<h4 id="GroupBox"> GroupBox </h4>
+
+Waiting for release.
+
+
+<h4 id="Section"> Section </h4>
+
+`Section` is used to create the **header/footer** view content, which is generally used in conjunction with the `List` component.
+
+Example:
+
+```swift
+Section(header: Text("I'm header"), footer: Text("I'm footer")) {
+    ForEach(0..<3) {
+        Text("Hello \($0)")
+    }
+}
+```
+
+<details close>
+  <summary>View running results</summary>
+<img width="80%" src="images/example/Section.png"/>
+</details>
 
 
 ## 📎 About
