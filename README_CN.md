@@ -18,9 +18,9 @@
 
 
 ## 截图
-|example| example |
-|:---:|:---:|:---:|
-|<img src="images/screenshot/x1.jpg" height="50%"/>|<img src="images/screenshot/x2.jpg" height="50%"/>|![image](gif/3.gif)|
+|View|Layout|
+|:---:|:---:|
+|<img src="images/screenshot/x1.jpg" height="50%"/>|<img src="images/screenshot/x2.jpg" height="50%"/>|
 
 ## 💻 所需环境
 
