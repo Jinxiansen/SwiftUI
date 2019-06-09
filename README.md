@@ -33,6 +33,7 @@ When learning and using `SwiftUI`, if you have any questions, you can join the S
 
 * Image
 	- [Image](#Image)
+	- [WebImage](#WebImage)
 
 
 * Button
@@ -212,6 +213,34 @@ Image("icon")
   <summary>View running results</summary>
 <img width="80%" src="images/example/Image.png"/>
 </details>
+
+
+
+<h4 id="WebImage"> WebImage </h4>
+
+`webImage` is used to download the web image, use the `URLSession` to download the original `Image` after successful download; you can also use [Kingfisher]((https://github.com/onevcat/Kingfisher)) in the `downloadWebImage ` function .
+
+Example：
+
+```swift
+var body: some View {
+        Image(uiImage: self.uiImage ?? placeholderImage)
+            .resizable()
+            .onAppear(perform: downloadWebImage)
+            .frame(width: Length(80),
+                   height: Length(80),
+                   alignment: .center)
+            .tapAction {
+                print("Tap ")
+        }
+    }
+```
+
+<details close>
+  <summary>View running results</summary>
+<img width="80%" src="images/example/WebImage.png"/>
+</details>
+
 
 
 <h4 id="Button"> Button </h4>

@@ -33,6 +33,9 @@ struct ContentView : View {
                     NavigationButton(destination: ImagePage()) {
                         PageRow(title: "Image",subTitle: "用以展示本地图片")
                     }
+                    NavigationButton(destination: WebImagePage()) {
+                        PageRow(title: "WebImage",subTitle: "下载网络图片并展示")
+                    }
                     NavigationButton(destination: WebViewPage()) {
                         PageRow(title: "WebView",subTitle: "用于展示一个打开的网页")
                     }

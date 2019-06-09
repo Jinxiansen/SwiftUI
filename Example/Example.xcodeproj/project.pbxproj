@@ -27,6 +27,7 @@
 		4196ABDC22A97D61008B8FD2 /* PageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4196ABDB22A97D61008B8FD2 /* PageRow.swift */; };
 		4196ABE222AA1B80008B8FD2 /* TextPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4196ABE122AA1B80008B8FD2 /* TextPage.swift */; };
 		4196ABE722AA268A008B8FD2 /* TextFieldPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4196ABE622AA268A008B8FD2 /* TextFieldPage.swift */; };
+		41977FF522ACA74600FD47FE /* WebImagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41977FF422ACA74600FD47FE /* WebImagePage.swift */; };
 		41F36F0A22AA84D600B9172D /* ButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F36F0922AA84D600B9172D /* ButtonPage.swift */; };
 		41F36F0C22AA87AF00B9172D /* TabBarPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F36F0B22AA87AF00B9172D /* TabBarPage.swift */; };
 		41F36F0E22AA8AEC00B9172D /* WebViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F36F0D22AA8AEC00B9172D /* WebViewPage.swift */; };
@@ -59,6 +60,7 @@
 		4196ABDB22A97D61008B8FD2 /* PageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRow.swift; sourceTree = "<group>"; };
 		4196ABE122AA1B80008B8FD2 /* TextPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPage.swift; sourceTree = "<group>"; };
 		4196ABE622AA268A008B8FD2 /* TextFieldPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldPage.swift; sourceTree = "<group>"; };
+		41977FF422ACA74600FD47FE /* WebImagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImagePage.swift; sourceTree = "<group>"; };
 		41F36F0922AA84D600B9172D /* ButtonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPage.swift; sourceTree = "<group>"; };
 		41F36F0B22AA87AF00B9172D /* TabBarPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPage.swift; sourceTree = "<group>"; };
 		41F36F0D22AA8AEC00B9172D /* WebViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPage.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				4164489C22AA6D6500A93AF2 /* ImagePage.swift */,
+				41977FF422ACA74600FD47FE /* WebImagePage.swift */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				4196ABC822A97AB1008B8FD2 /* AppDelegate.swift in Sources */,
 				4161B33222AB6D3400CD5A1B /* ForEachPage.swift in Sources */,
+				41977FF522ACA74600FD47FE /* WebImagePage.swift in Sources */,
 				4196ABE722AA268A008B8FD2 /* TextFieldPage.swift in Sources */,
 				4161B32722AB68F600CD5A1B /* HStackPage.swift in Sources */,
 				4164489D22AA6D6500A93AF2 /* ImagePage.swift in Sources */,

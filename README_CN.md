@@ -35,7 +35,7 @@
 
 * Image 图片
 	- [Image](#Image)
-
+	- [WebImage](#WebImage)
 
 * Button 按钮
 	- [Button](#Button)
@@ -215,6 +215,31 @@ Image("icon")
 <img width="80%" src="images/example/Image.png"/>
 </details>
 
+
+<h4 id="WebImage"> WebImage </h4>
+
+`webImage` 用于下载网络图片，使用的 `URLSession`下载成功后替换原有 `Image`；你也可以在 `downloadWebImage ` 方法中使用 [Kingfisher](https://github.com/onevcat/Kingfisher) 。
+
+示例：
+
+```swift
+var body: some View {
+        Image(uiImage: self.uiImage ?? placeholderImage)
+            .resizable()
+            .onAppear(perform: downloadWebImage)
+            .frame(width: Length(80),
+                   height: Length(80),
+                   alignment: .center)
+            .tapAction {
+                print("Tap ")
+        }
+    }
+```
+
+<details close>
+  <summary>查看运行效果</summary>
+<img width="80%" src="images/example/WebImage.png"/>
+</details>
 
 <h4 id="Button"> Button </h4>
 
