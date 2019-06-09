@@ -20,7 +20,7 @@
 ## 截图
 |example| example |
 |:---:|:---:|:---:|
-|<img src="images/screenshot/x1.jpg"/>|<img src="images/screenshot/x2.jpg"/>|![image](gif/3.gif)|
+|<img src="images/screenshot/x1.jpg" height="50%"/>|<img src="images/screenshot/x2.jpg" height="50%"/>|![image](gif/3.gif)|
 
 ## 💻 所需环境
 
