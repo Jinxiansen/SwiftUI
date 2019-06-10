@@ -100,6 +100,16 @@ struct ContentView : View {
                         PageRow(title: "Section",subTitle: "用于创建带头/尾部的视图内容，一般结合 `List` 组件使用")
                         }.frame(height: 80)
                 }
+                
+                Section(header: Text("导航视图")) {
+                    NavigationButton(destination: NavigationViewPage()) {
+                        PageRow(title: "NavigationView",subTitle: "用于创建包含顶部导航栏的视图容器")
+                    }
+                    NavigationButton(destination: TabBarPage()) {
+                        PageRow(title: "TabBar",subTitle: "用于创建包含底部 TabBar 的视图容器")
+                    }
+                }
+
                 }.listStyle(.grouped)
                 .navigationBarTitle(Text("Example"), displayMode: .large)
         }

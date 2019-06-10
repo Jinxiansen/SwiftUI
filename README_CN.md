@@ -79,10 +79,6 @@
 	- [GroupBox](#GroupBox)
 	- [Section](#Section)
 
-* Spacers and Dividers 间距、分割
-	- [Spacer](#Spacer)
-	- [Divider](#Divider)
-
 * Architectural Views 导航、切换、排列
 	- [NavigationView](#NavigationView)
 	- [TabbedView](#TabbedView)
@@ -645,6 +641,56 @@ Section(header: Text("I'm header"), footer: Text("I'm footer")) {
   <summary>查看运行效果</summary>
 <img width="80%" src="images/example/Section.png"/>
 </details>
+
+
+<h4 id="NavigationView"> NavigationView </h4>
+
+`NavigationView` 用于创建包含顶部导航栏的视图容器。
+
+示例:
+
+```swift
+NavigationView {
+    Text("🧚‍♂️🧚‍♀️🧜‍♂️🧜‍♀️🧞‍♂️🧞‍♀️").blur(radius: 5)
+    Text("Swifter Swifter").bold().color(.orange).font(.largeTitle)
+}.navigationBarTitle(Text("NavigationView"))
+```
+
+<details close>
+  <summary>查看运行效果</summary>
+<img width="80%" src="images/example/NavigationView.png"/>
+</details>
+
+
+<h4 id="TabbedView"> TabbedView </h4>
+
+`TabBar` 用于创建包含底部 **TabBar** 的视图容器。
+
+示例:
+
+```swift
+TabbedView(selection: $index) {
+    ForEach(0 ..< imgs.count) { item in
+        TabItemPage(index: item)
+            .tabItemLabel(Image(self.imgs[item]))
+            .tag(item)
+    }
+}
+```
+
+<details close>
+  <summary>查看运行效果</summary>
+<img width="80%" src="images/example/TabBar.png"/>
+</details>
+
+
+<h4 id="HSplitView"> HSplitView </h4> 
+
+尚未发布
+
+<h4 id="VSplitView"> VSplitView </h4> 
+
+尚未发布
 
 
 ## 📎 About

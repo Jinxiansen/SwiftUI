@@ -73,10 +73,6 @@ When learning and using `SwiftUI`, if you have any questions, you can join the S
 	- [GroupBox](#GroupBox)
 	- [Section](#Section)
 
-* Spacers and Dividers
-	- [Spacer](#Spacer)
-	- [Divider](#Divider)
-
 * Architectural Views
 	- [NavigationView](#NavigationView)
 	- [TabbedView](#TabbedView)
@@ -633,6 +629,56 @@ Section(header: Text("I'm header"), footer: Text("I'm footer")) {
   <summary>View running results</summary>
 <img width="80%" src="images/example/Section.png"/>
 </details>
+
+
+<h4 id="NavigationView"> NavigationView </h4>
+
+`NavigationView` is used to create a view container that contains the top navigation bar.
+
+Example:
+
+```swift
+NavigationView {
+    Text("🧚‍♂️🧚‍♀️🧜‍♂️🧜‍♀️🧞‍♂️🧞‍♀️").blur(radius: 5)
+    Text("Swifter Swifter").bold().color(.orange).font(.largeTitle)
+}.navigationBarTitle(Text("NavigationView"))
+```
+
+<details close>
+  <summary>View running results</summary>
+<img width="80%" src="images/example/NavigationView.png"/>
+</details>
+
+
+<h4 id="TabBar"> TabBar </h4>
+
+`TabBar` is used to create a view container that contains the bottom **TabBar**.
+
+Example:
+
+```swift
+TabbedView(selection: $index) {
+    ForEach(0 ..< imgs.count) { item in
+        TabItemPage(index: item)
+            .tabItemLabel(Image(self.imgs[item]))
+            .tag(item)
+    }
+}
+```
+
+<details close>
+  <summary>View running results</summary>
+<img width="80%" src="images/example/TabBar.png"/>
+</details>
+
+
+<h4 id="HSplitView"> HSplitView </h4> 
+
+Waiting for release.
+
+<h4 id="VSplitView"> VSplitView </h4> 
+
+Waiting for release.
 
 
 ## 📎 About
