@@ -46,6 +46,7 @@ When learning and using `SwiftUI`, if you have any questions, you can join the S
 	- [PasteButton](#PasteButton)
 
 * Picker
+	- [Picker](#Picker)
 	- [DatePicker](#DatePicker)
 	- [Toggle](#Toggle)
 	- [Slider](#Slider)
@@ -324,6 +325,26 @@ navigationBarItems(trailing: EditButton())
 
 Waiting for release.
  
+
+<h4 id="Picker"> Picker </h4>
+
+`Picker` can customize the selector of the data source.
+
+Example:
+
+```swift
+Picker(selection: $leftIndex, label: Text("Picker")) {
+    ForEach(0..<leftSource.count) {
+        Text(self.leftSource[$0]).tag($0)
+    }
+    }.frame(width: UIScreen.main.bounds.width/2)
+```     
+
+<details close>
+  <summary>View running results</summary>
+<img width="80%" src="images/example/Picker.png"/>
+</details>
+
 
 <h4 id="DatePicker"> DatePicker </h4>
 

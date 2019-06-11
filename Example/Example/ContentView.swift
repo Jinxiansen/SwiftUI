@@ -56,6 +56,10 @@ struct ContentView : View {
                 }
                 
                 Section(header: Text("选择器")) {
+                    
+                    NavigationButton(destination: PickerPage()) {
+                        PageRow(title: "Picker",subTitle: "可自定义数据源的 Picker 选择器")
+                    }
                     NavigationButton(destination: DatePickerPage()) {
                         PageRow(title: "DatePicker",subTitle: "日期展示与选择")
                     }

@@ -52,6 +52,7 @@
 	- [PasteButton](#PasteButton)
 
 * Picker
+	- [Picker](#Picker)
 	- [DatePicker](#DatePicker)
 	- [Toggle](#Toggle)
 	- [Slider](#Slider)
@@ -323,6 +324,25 @@ navigationBarItems(trailing: EditButton())
 
 尚未发布
 
+
+<h4 id="Picker"> Picker </h4>
+
+`Picker` 可自定义数据源的选择器。
+
+示例:
+
+```swift
+Picker(selection: $leftIndex, label: Text("Picker")) {
+    ForEach(0..<leftSource.count) {
+        Text(self.leftSource[$0]).tag($0)
+    }
+    }.frame(width: UIScreen.main.bounds.width/2)
+```     
+
+<details close>
+  <summary>查看运行效果</summary>
+<img width="80%" src="images/example/Picker.png"/>
+</details>
  
 
 <h4 id="DatePicker"> DatePicker </h4>
