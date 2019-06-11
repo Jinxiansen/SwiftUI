@@ -8,9 +8,10 @@
 
 本文参考 SwiftUI [官方示例](https://github.com/Jinxiansen/SwiftUI/tree/doc) 并将探索结果记录于此，希望能够对你有所帮助。 
 
-对于本文所述内容，默认你已有一定的基于 Swift 语言的开发经验，故不会详细的叙述每个细节；如果对 Swift 语法有疑问，可先学习 [Swift](https://swift.org) 语法。
+对于本文所述内容，默认你已有一定的基于 Swift 语言的开发经验，故不会详细的叙述每个细节；如果对 Swift 语法有疑问，可先学习 [Swift](https://swift.org) 语法。如果你更习惯直接查看中文文档，可前往[中文同步翻译网站](https://www.cnswift.org/)。
 
-在了解和使用 `SwiftUI` 过程中，如果有疑问之处，可加入 SwiftUI QQ 交流群：**18552966** ，共同交流。
+
+在了解和使用 `SwiftUI` 过程中，欢迎大家踊跃加入 SwiftUI QQ 交流群：**18552966** ，共同交流。
 
 [English 📔](README.md)
 
