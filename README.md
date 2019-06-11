@@ -10,7 +10,7 @@ This article refers to SwiftUI [apple example](https://github.com/Jinxiansen/Swi
 
 For the content described in this article, by default you have some experience based on Swift language development, so it will not describe every detail in detail; if you have doubts about Swift syntax, you can learn [Swift](https://swift.org) Grammar.
 
-When learning and using `SwiftUI`, if you have any questions, you can join the SwiftUI QQ Group: **18552966** to discuss communication.
+When learning and using `SwiftUI`, Welcome to join us and the SwiftUI QQ Group: **18552966** to discuss communication.
 
 [中文版🇨🇳](README_CN.md)
 
