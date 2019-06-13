@@ -13,6 +13,18 @@ struct ContentView : View {
     var body: some View {
         NavigationView {
             List {
+                Section(header: Text("特殊视图")) {
+                    NavigationButton(destination: WebViewPage()) {
+                        PageRow(title: "WebView",subTitle: "用于展示一个打开的网页")
+                    }
+                    NavigationButton(destination: AlertPage()) {
+                        PageRow(title: "AlertView",subTitle: "用于展示一个弹框提醒")
+                    }
+                    
+                    NavigationButton(destination: ControllerPage<UIKitController>()) {
+                        PageRow(title: "UIViewController",subTitle: "打开 UIViewController")
+                    }
+                }
                 Section(header: Text("基础控件")) {
                     NavigationButton(destination: TextPage()) {
                         PageRow(title: "Text",subTitle: "显示一行或多行只读文本")
@@ -29,15 +41,7 @@ struct ContentView : View {
                     NavigationButton(destination: WebImagePage()) {
                         PageRow(title: "WebImage",subTitle: "下载网络图片并展示")
                     }
-                    NavigationButton(destination: WebViewPage()) {
-                        PageRow(title: "WebView",subTitle: "用于展示一个打开的网页")
-                    }
-                    NavigationButton(destination: AlertPage()) {
-                        PageRow(title: "Alert",subTitle: "用于展示一个弹框提醒")
-                    }
-                    
                 }
-                
                 Section(header: Text("按钮")) {
                     NavigationButton(destination: ButtonPage()) {
                         PageRow(title: "Button",subTitle: "触发时执行操作的按钮")
@@ -56,7 +60,6 @@ struct ContentView : View {
                 }
                 
                 Section(header: Text("选择器")) {
-                    
                     NavigationButton(destination: PickerPage()) {
                         PageRow(title: "Picker",subTitle: "可自定义数据源的 Picker 选择器")
                     }
@@ -99,12 +102,10 @@ struct ContentView : View {
                     NavigationButton(destination: GroupPage()) {
                         PageRow(title: "Group",subTitle: "用于集合多个视图，对 Group 设置的属性，将作用于每个子视图")
                         }.frame(height: 80)
-                    
                     NavigationButton(destination: SectionPage()) {
                         PageRow(title: "Section",subTitle: "用于创建带头/尾部的视图内容，一般结合 `List` 组件使用")
                         }.frame(height: 80)
                 }
-                
                 Section(header: Text("导航视图")) {
                     NavigationButton(destination: NavigationViewPage()) {
                         PageRow(title: "NavigationView",subTitle: "用于创建包含顶部导航栏的视图容器")
@@ -112,10 +113,14 @@ struct ContentView : View {
                     NavigationButton(destination: TabBarPage()) {
                         PageRow(title: "TabBar",subTitle: "用于创建包含底部 TabBar 的视图容器")
                     }
-                }
-
-                }.listStyle(.grouped)
+                }}
+                .listStyle(.grouped)
                 .navigationBarTitle(Text("Example"), displayMode: .large)
+                .navigationBarItems(trailing: Button(action: {
+                    print("Tap")
+                }, label: {
+                    Text("Right").color(.orange)
+                }))
         }
     }
     

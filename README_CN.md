@@ -62,6 +62,7 @@
 * 其他
 	- [WebView](#WebView)
 	- [Alert](#Alert)
+	- [UIViewController](#UIViewController)
 
 ### 布局
 	
@@ -489,6 +490,47 @@ presentation($showsAlert, alert: {
   <summary>查看运行效果</summary>
 <img width="80%" src="images/example/Alert.png"/>
 </details>
+
+<h4 id="UIViewController"> UIViewController </h4>
+
+`UIViewController ` 用于展示在 **SwiftUI** 中打开 **UIKit** 的 **UIViewController** ，并且在 **UIViewController** 中打开 `SwiftUI` View。
+
+示例:
+
+先定义：
+
+```swift
+struct ControllerPage<T: UIViewController> : UIViewControllerRepresentable {
+    
+    typealias UIViewControllerType = UIViewController
+    
+    func makeUIViewController(context: UIViewControllerRepresentableContext<ControllerPage>) -> UIViewController {
+        return T()
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<ControllerPage>) {
+        debugPrint("\(#function)：\(type(of: T.self))")
+    }
+    
+}
+```
+
+然后调用：
+
+```swift
+NavigationButton(destination: ControllerPage<UIKitController>()) {
+    PageRow(title: "UIViewController",subTitle: "打开 UIViewController")
+
+}
+```
+
+
+<details close>
+  <summary>查看运行效果</summary>
+<img width="80%" src="images/example/UIViewController.png"/>
+<img width="80%" src="images/example/UIViewController2.png"/>
+</details>
+
 
 
 ### 布局 

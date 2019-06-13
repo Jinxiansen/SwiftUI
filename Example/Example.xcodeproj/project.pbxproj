@@ -16,6 +16,8 @@
 		415F044922AB8801003E59FC /* SegmentedControlPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415F044822AB8801003E59FC /* SegmentedControlPage.swift */; };
 		415F044B22AB9A96003E59FC /* AlertPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415F044A22AB9A95003E59FC /* AlertPage.swift */; };
 		415F044F22ABA1E3003E59FC /* TogglePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415F044E22ABA1E3003E59FC /* TogglePage.swift */; };
+		4160444C22B291000052CAFC /* UIKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4160444B22B291000052CAFC /* UIKitController.swift */; };
+		4160445122B2987A0052CAFC /* ControllerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4160445022B2987A0052CAFC /* ControllerPage.swift */; };
 		4161B32722AB68F600CD5A1B /* HStackPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4161B32622AB68F600CD5A1B /* HStackPage.swift */; };
 		4161B32922AB695A00CD5A1B /* VStackPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4161B32822AB695A00CD5A1B /* VStackPage.swift */; };
 		4161B32B22AB696300CD5A1B /* ZStackPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4161B32A22AB696300CD5A1B /* ZStackPage.swift */; };
@@ -53,6 +55,8 @@
 		415F044822AB8801003E59FC /* SegmentedControlPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlPage.swift; sourceTree = "<group>"; };
 		415F044A22AB9A95003E59FC /* AlertPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPage.swift; sourceTree = "<group>"; };
 		415F044E22ABA1E3003E59FC /* TogglePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglePage.swift; sourceTree = "<group>"; };
+		4160444B22B291000052CAFC /* UIKitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitController.swift; sourceTree = "<group>"; };
+		4160445022B2987A0052CAFC /* ControllerPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerPage.swift; sourceTree = "<group>"; };
 		4161B32622AB68F600CD5A1B /* HStackPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackPage.swift; sourceTree = "<group>"; };
 		4161B32822AB695A00CD5A1B /* VStackPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackPage.swift; sourceTree = "<group>"; };
 		4161B32A22AB696300CD5A1B /* ZStackPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackPage.swift; sourceTree = "<group>"; };
@@ -143,6 +147,17 @@
 			path = List;
 			sourceTree = "<group>";
 		};
+		4160444F22B2985D0052CAFC /* SpecialPage */ = {
+			isa = PBXGroup;
+			children = (
+				415F044A22AB9A95003E59FC /* AlertPage.swift */,
+				41F36F0D22AA8AEC00B9172D /* WebViewPage.swift */,
+				4160445022B2987A0052CAFC /* ControllerPage.swift */,
+				4160444B22B291000052CAFC /* UIKitController.swift */,
+			);
+			path = SpecialPage;
+			sourceTree = "<group>";
+		};
 		4161B32E22AB6D0F00CD5A1B /* Stack */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,13 +212,12 @@
 		4196ABE522AA24B4008B8FD2 /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				4160444F22B2985D0052CAFC /* SpecialPage */,
 				41FE99ED22AADF7C008135A0 /* Text */,
 				41FE99EE22AADF8E008135A0 /* Image */,
 				41FE99EC22AADF6E008135A0 /* Button */,
 				415F044D22ABA051003E59FC /* List */,
 				415F044C22ABA043003E59FC /* Picker */,
-				415F044A22AB9A95003E59FC /* AlertPage.swift */,
-				41F36F0D22AA8AEC00B9172D /* WebViewPage.swift */,
 				4132A46922AEB15A00A8DBBE /* Navigation */,
 				4132A46122AD700F00A8DBBE /* Container */,
 				4161B32E22AB6D0F00CD5A1B /* Stack */,
@@ -321,7 +335,9 @@
 				41F36F1022AA915300B9172D /* ListPage.swift in Sources */,
 				41F36F0A22AA84D600B9172D /* ButtonPage.swift in Sources */,
 				41FE99E722AAD08A008135A0 /* NavigationButtonPage.swift in Sources */,
+				4160444C22B291000052CAFC /* UIKitController.swift in Sources */,
 				4196ABE222AA1B80008B8FD2 /* TextPage.swift in Sources */,
+				4160445122B2987A0052CAFC /* ControllerPage.swift in Sources */,
 				4196ABCA22A97AB1008B8FD2 /* SceneDelegate.swift in Sources */,
 				4161B32B22AB696300CD5A1B /* ZStackPage.swift in Sources */,
 				4161B33022AB6D2900CD5A1B /* ScrollViewPage.swift in Sources */,

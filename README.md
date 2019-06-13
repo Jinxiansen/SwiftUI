@@ -56,6 +56,7 @@ When learning and using `SwiftUI`, if you have any questions, you can join the S
 * Other View
 	- [WebView](#WebView)
 	- [Alert](#Alert)
+	- [UIViewController](#UIViewController)
 
 ### Layout
 	
@@ -476,6 +477,47 @@ presentation($showsAlert, alert: {
 <details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/Alert.png"/>
+</details>
+
+
+<h4 id="UIViewController"> UIViewController </h4>
+
+`UIViewController` is used to display the **UIViewController** that opens **UIKit** in **SwiftUI** and opens the `SwiftUI` View in **UIViewController**.
+
+Example:
+
+First define:
+
+```swift
+struct ControllerPage<T: UIViewController> : UIViewControllerRepresentable {
+    
+    typealias UIViewControllerType = UIViewController
+    
+    func makeUIViewController(context: UIViewControllerRepresentableContext<ControllerPage>) -> UIViewController {
+        return T()
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<ControllerPage>) {
+        debugPrint("\(#function)：\(type(of: T.self))")
+    }
+    
+}
+```
+
+Then use this:
+
+```swift
+NavigationButton(destination: ControllerPage<UIKitController>()) {
+    PageRow(title: "UIViewController",subTitle: "Open UIViewController")
+
+}
+```
+
+
+<details close>
+  <summary>View running results</summary>
+<img width="80%" src="images/example/UIViewController.png"/>
+<img width="80%" src="images/example/UIViewController2.png"/>
 </details>
 
 
