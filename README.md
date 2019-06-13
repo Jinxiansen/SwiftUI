@@ -152,7 +152,7 @@ Text("SwiftUI")
     .shadow(color: .black, radius: 1, x: 0, y: 2)
 ```
 
-<details open>
+<details close>
   <summary>View running results</summary>
   <img width="80%" src="images/example/Text.png"/>
 </details>
@@ -183,7 +183,7 @@ TextField(self.$name, placeholder: self.nameText, onEditingChanged: { changed in
 
 ```
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/Field.png"/>
 </details>
@@ -207,7 +207,7 @@ Image("icon")
            alignment: .center)
 ```
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/Image.png"/>
 </details>
@@ -234,7 +234,7 @@ var body: some View {
     }
 ```
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/WebImage.png"/>
 </details>
@@ -254,7 +254,7 @@ Button(action: {
    Text("I'm a Button")
 }
 ```
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/Button.png"/>
 </details>
@@ -282,7 +282,7 @@ NavigationButton(destination: NavigationButtonPage()) {
     }.navigationBarItem(title: Text("Page"))
 ```     
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/NavigationButton.png"/>
 </details>
@@ -302,7 +302,7 @@ PresentationButton(PageRow(title: "PresentationButton", subTitle: "pop up a page
                    }
 ```     
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/PresentationButton.png"/>
 </details>
@@ -319,7 +319,7 @@ Example:
 navigationBarItems(trailing: EditButton())
 ```     
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/EditButton.png"/>
 </details>
@@ -345,7 +345,7 @@ Picker(selection: $leftIndex, label: Text("Picker")) {
     }.frame(width: UIScreen.main.bounds.width/2)
 ```     
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/Picker.png"/>
 </details>
@@ -371,7 +371,7 @@ DatePicker(
 )
 ```     
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/DatePicker.png"/>
 </details>
@@ -388,7 +388,7 @@ Togglele(isOn: $isOn) {
 }.padding(20)
 ```
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/Toggle.png"/>
 </details>
@@ -403,7 +403,7 @@ Togglele(isOn: $isOn) {
 Slider(value: $data.rating)
 ```     
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/Slider.png"/>
 </details>
@@ -422,7 +422,7 @@ Stepper(value: $value, step: 2, onEditingChanged: { c in
     }.padding(50)
 ```
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/Stepper.png"/>
 </details>
@@ -443,7 +443,7 @@ SegmentedControl(selection: $currentIndex) {
 }
 ```
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/SegmentedControl.png"/>
 </details>
@@ -466,7 +466,7 @@ struct WebViewPage : UIViewRepresentable {
 }
 ```
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/WebView.png"/>
 </details>
@@ -483,7 +483,7 @@ presentation($showsAlert, alert: {
             })
 ```
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/Alert.png"/>
 </details>
@@ -524,7 +524,7 @@ NavigationButton(destination: ControllerPage<UIKitController>()) {
 ```
 
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/UIViewController.png"/>
 <img width="80%" src="images/example/UIViewController2.png"/>
@@ -550,7 +550,7 @@ HStack {
 }
 ```
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/HStack.png"/>
 </details>
@@ -571,7 +571,7 @@ VStack {
 }
 ```
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/VStack.png"/>
 </details>
@@ -592,7 +592,7 @@ ZStack {
 }
 ```
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/ZStack.png"/>
 </details>
@@ -611,7 +611,7 @@ List(0..<5) { item in
 }.navigationBarTitle(Text("List"), displayMode: .large)
 ```
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/List.png"/>
 </details>
@@ -638,7 +638,7 @@ ScrollView {
     .navigationBarTitle(Text("ScrollView"))
 ```
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/ScrollView.png"/>
 </details>
@@ -662,7 +662,7 @@ var body: some View {
 }
 ```
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/ForEach.png"/>
 </details>
@@ -682,7 +682,7 @@ Group {
     }
 ```
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/Group.png"/>
 </details>
@@ -708,7 +708,7 @@ Section(header: Text("I'm header"), footer: Text("I'm footer")) {
 }
 ```
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/Section.png"/>
 </details>
@@ -728,7 +728,7 @@ NavigationView {
 }.navigationBarTitle(Text("NavigationView"))
 ```
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/NavigationView.png"/>
 </details>
@@ -751,7 +751,7 @@ TabbedView(selection: $index) {
 }
 ```
 
-<details open>
+<details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/TabBar.png"/>
 </details>
