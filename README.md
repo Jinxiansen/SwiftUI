@@ -304,7 +304,7 @@ PresentationButton(PageRow(title: "PresentationButton", subTitle: "pop up a page
 
 <details close>
   <summary>View running results</summary>
-<img width="80%" src="images/example/PresentationButton.png"/>
+<img width="40%" src="images/example/PresentationButton.png"/>
 </details>
 
 [🔝](#Button_D)
