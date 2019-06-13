@@ -304,7 +304,7 @@ PresentationButton(PageRow(title: "PresentationButton", subTitle: "触发时显�
 
 <details close>
   <summary>查看运行效果</summary>
-<img width="80%" src="images/example/PresentationButton.png"/>
+<img width="40%" src="images/example/PresentationButton.png"/>
 </details>
 
 [🔝](#Button_D)
