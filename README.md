@@ -54,7 +54,6 @@ When learning and using `SwiftUI`, if you have any questions, you can join the S
 
 * <span id="Special_D">Special Views</span>
 	- [WebView](#WebView)
-	- [Alert](#Alert)
 	- [UIViewController](#UIViewController)
 
 ### <span id="Layout_D">Layout</span>
@@ -80,7 +79,7 @@ When learning and using `SwiftUI`, if you have any questions, you can join the S
 	- [HSplitView](#HSplitView)
 	- [VSplitView](#VSplitView)
 
-* <span id="Presentations_D">Presentations</span>
+* <span id="Alert_D"> Alert </span>
 	- [Alert](#Alert)
 	- [Modal](#Modal)
 	- [Popover](#Popover)
@@ -473,23 +472,6 @@ struct WebViewPage : UIViewRepresentable {
 
 [🔝](#Special_D)
 
-<h4 id="Alert"> Alert </h4>
-
-`Alert` is used to display a bullet reminder that needs to be associated with a click event. Example:
-
-```swift
-presentation($showsAlert, alert: {
-                Alert(title: Text("Hello"))
-            })
-```
-
-<details close>
-  <summary>View running results</summary>
-<img width="80%" src="images/example/Alert.png"/>
-</details>
-
-[🔝](#Special_D)
-
 <h4 id="UIViewController"> UIViewController </h4>
 
 `UIViewController` is used to display the **UIViewController** that opens **UIKit** in **SwiftUI** and opens the `SwiftUI` View in **UIViewController**.
@@ -767,6 +749,95 @@ Waiting for release.
 Waiting for release.
 
 [🔝](#Layout_D)
+
+<h4 id="Alert"> Alert </h4>
+
+`Alert` is used to display a bullet reminder that needs to be associated with a trigger event.
+
+Example:
+
+```swift
+presentation($showsAlert, alert: {
+                Alert(title: Text("Hello"))
+            })
+```
+
+<details close>
+  <summary>View running results</summary>
+<img width="80%" src="images/example/Alert.png"/>
+</details>
+
+[🔝](#Alert_D)
+
+
+<h4 id="ActionSheet"> ActionSheet </h4>
+
+`ActionSheet` is used to pop up a selection box.
+
+Example:
+
+```swift
+ActionSheet(title: Text("Title"),
+            message: Text("Message"),
+            buttons:
+    [.default(Text("Default"), onTrigger: {
+        print("Default")
+        self.showSheet = false
+    }),.destructive(Text("destructive"), onTrigger: {
+        print("destructive")
+        self.showSheet = false
+    }),.cancel({
+        print("Cancel")
+        self.showSheet = false
+    })])
+```
+
+<details close>
+  <summary>View running results</summary>
+<img width="80%" src="images/example/ActionSheet.png"/>
+</details>
+
+[🔝](#Alert_D)
+
+
+<h4 id="Modal"> Modal </h4>
+
+`Modal` is used to pop up a view.
+
+Example:
+
+```swift
+Modal(Text("Modal View"),onDismiss: {
+    print("View Dismiss !")
+})
+```
+
+<details close>
+  <summary>View running results</summary>
+<img width="80%" src="images/example/Modal.png"/>
+</details>
+
+[🔝](#Alert_D)
+
+
+<h4 id="Popover"> Popover </h4>
+
+`Popover` is used to pop up a view, see the results below.
+
+Example:
+
+```swift
+Popover(content: Text("Popover View")) {
+    print("Popover Dismiss !")
+}
+```
+
+<details close>
+  <summary>View running results</summary>
+<img width="80%" src="images/example/Popover.png"/>
+</details>
+
+[🔝](#Alert_D)
 
 ## 📎 About
 

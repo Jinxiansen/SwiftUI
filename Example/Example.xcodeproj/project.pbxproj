@@ -36,6 +36,9 @@
 		4196ABE222AA1B80008B8FD2 /* TextPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4196ABE122AA1B80008B8FD2 /* TextPage.swift */; };
 		4196ABE722AA268A008B8FD2 /* TextFieldPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4196ABE622AA268A008B8FD2 /* TextFieldPage.swift */; };
 		41977FF522ACA74600FD47FE /* WebImagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41977FF422ACA74600FD47FE /* WebImagePage.swift */; };
+		41C7E65E22B4A9680074D4F6 /* ModalPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C7E65D22B4A9680074D4F6 /* ModalPage.swift */; };
+		41E4DCCE22B4ADB000F78522 /* PopoverPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E4DCCD22B4ADB000F78522 /* PopoverPage.swift */; };
+		41E4DCD022B4B4FF00F78522 /* ActionSheetPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E4DCCF22B4B4FF00F78522 /* ActionSheetPage.swift */; };
 		41F36F0A22AA84D600B9172D /* ButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F36F0922AA84D600B9172D /* ButtonPage.swift */; };
 		41F36F0C22AA87AF00B9172D /* TabBarPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F36F0B22AA87AF00B9172D /* TabBarPage.swift */; };
 		41F36F0E22AA8AEC00B9172D /* WebViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F36F0D22AA8AEC00B9172D /* WebViewPage.swift */; };
@@ -77,6 +80,9 @@
 		4196ABE122AA1B80008B8FD2 /* TextPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPage.swift; sourceTree = "<group>"; };
 		4196ABE622AA268A008B8FD2 /* TextFieldPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldPage.swift; sourceTree = "<group>"; };
 		41977FF422ACA74600FD47FE /* WebImagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImagePage.swift; sourceTree = "<group>"; };
+		41C7E65D22B4A9680074D4F6 /* ModalPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPage.swift; sourceTree = "<group>"; };
+		41E4DCCD22B4ADB000F78522 /* PopoverPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverPage.swift; sourceTree = "<group>"; };
+		41E4DCCF22B4B4FF00F78522 /* ActionSheetPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetPage.swift; sourceTree = "<group>"; };
 		41F36F0922AA84D600B9172D /* ButtonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPage.swift; sourceTree = "<group>"; };
 		41F36F0B22AA87AF00B9172D /* TabBarPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPage.swift; sourceTree = "<group>"; };
 		41F36F0D22AA8AEC00B9172D /* WebViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPage.swift; sourceTree = "<group>"; };
@@ -150,7 +156,6 @@
 		4160444F22B2985D0052CAFC /* SpecialPage */ = {
 			isa = PBXGroup;
 			children = (
-				415F044A22AB9A95003E59FC /* AlertPage.swift */,
 				41F36F0D22AA8AEC00B9172D /* WebViewPage.swift */,
 				4160445022B2987A0052CAFC /* ControllerPage.swift */,
 				4160444B22B291000052CAFC /* UIKitController.swift */,
@@ -221,8 +226,20 @@
 				4132A46922AEB15A00A8DBBE /* Navigation */,
 				4132A46122AD700F00A8DBBE /* Container */,
 				4161B32E22AB6D0F00CD5A1B /* Stack */,
+				41C7E65F22B4A96C0074D4F6 /* Alert */,
 			);
 			path = Page;
+			sourceTree = "<group>";
+		};
+		41C7E65F22B4A96C0074D4F6 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				415F044A22AB9A95003E59FC /* AlertPage.swift */,
+				41E4DCCF22B4B4FF00F78522 /* ActionSheetPage.swift */,
+				41C7E65D22B4A9680074D4F6 /* ModalPage.swift */,
+				41E4DCCD22B4ADB000F78522 /* PopoverPage.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 		41FE99EC22AADF6E008135A0 /* Button */ = {
@@ -324,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41E4DCD022B4B4FF00F78522 /* ActionSheetPage.swift in Sources */,
 				4196ABC822A97AB1008B8FD2 /* AppDelegate.swift in Sources */,
 				4161B33222AB6D3400CD5A1B /* ForEachPage.swift in Sources */,
 				41977FF522ACA74600FD47FE /* WebImagePage.swift in Sources */,
@@ -350,12 +368,14 @@
 				415F044F22ABA1E3003E59FC /* TogglePage.swift in Sources */,
 				41F36F0E22AA8AEC00B9172D /* WebViewPage.swift in Sources */,
 				4132A46022AD624700A8DBBE /* SectionPage.swift in Sources */,
+				41C7E65E22B4A9680074D4F6 /* ModalPage.swift in Sources */,
 				4196ABDC22A97D61008B8FD2 /* PageRow.swift in Sources */,
 				4132A46322AD709300A8DBBE /* Color+Ext.swift in Sources */,
 				415F044922AB8801003E59FC /* SegmentedControlPage.swift in Sources */,
 				41FE99E922AAD7B0008135A0 /* EditButtonPage.swift in Sources */,
 				4132A45E22AD561500A8DBBE /* GroupPage.swift in Sources */,
 				4132A46822AE8D5200A8DBBE /* NavigationViewPage.swift in Sources */,
+				41E4DCCE22B4ADB000F78522 /* PopoverPage.swift in Sources */,
 				4161B32D22AB6CBE00CD5A1B /* SliderPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

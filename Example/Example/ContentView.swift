@@ -17,10 +17,6 @@ struct ContentView : View {
                     NavigationButton(destination: WebViewPage()) {
                         PageRow(title: "WebView",subTitle: "用于展示一个打开的网页")
                     }
-                    NavigationButton(destination: AlertPage()) {
-                        PageRow(title: "AlertView",subTitle: "用于展示一个弹框提醒")
-                    }
-                    
                     NavigationButton(destination: ControllerPage<UIKitController>()) {
                         PageRow(title: "UIViewController",subTitle: "打开 UIViewController")
                     }
@@ -56,7 +52,6 @@ struct ContentView : View {
                     NavigationButton(destination: EditButtonPage()) {
                         PageRow(title: "EditButton",subTitle: "用于切换当前编辑模式的按钮")
                     }
-                    //PageRow(title: "PasteButton",subTitle: "用于触发从粘贴板读取数据 - 尚未发布")
                 }
                 
                 Section(header: Text("选择器")) {
@@ -113,7 +108,22 @@ struct ContentView : View {
                     NavigationButton(destination: TabBarPage()) {
                         PageRow(title: "TabBar",subTitle: "用于创建包含底部 TabBar 的视图容器")
                     }
-                }}
+                }
+                Section(header: Text("Alert 弹框视图")) {
+                    NavigationButton(destination: AlertPage()) {
+                        PageRow(title: "Alert",subTitle: "展示一个弹框提醒")
+                    }
+                    NavigationButton(destination: ActionSheetPage()) {
+                        PageRow(title: "ActionSheet",subTitle: "弹出一个选择框")
+                    }
+                    NavigationButton(destination: ModalPage()) {
+                        PageRow(title: "Modal",subTitle: "Modal 弹出一个视图")
+                    }
+                    NavigationButton(destination: PopoverPage()) {
+                        PageRow(title: "Popover",subTitle: "Pop 弹出一个视图")
+                    }
+                }
+                }
                 .listStyle(.grouped)
                 .navigationBarTitle(Text("Example"), displayMode: .large)
                 .navigationBarItems(trailing: Button(action: {

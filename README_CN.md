@@ -61,7 +61,6 @@
 
 * <span id="Special_D">特殊视图</span>
 	- [WebView](#WebView)
-	- [Alert](#Alert)
 	- [UIViewController](#UIViewController)
 
 ### <span id="Layout_D">布局</span>
@@ -87,7 +86,7 @@
 	- [HSplitView](#HSplitView)
 	- [VSplitView](#VSplitView)
 
-* <span id="Presentations_D">Presentations 弹框、选择</span>
+* <span id="Alert_D">Alert 弹框、选择</span>
 	- [Alert](#Alert)
 	- [Modal](#Modal)
 	- [Popover](#Popover)
@@ -484,24 +483,6 @@ struct WebViewPage : UIViewRepresentable {
 
 [🔝](#Special_D)
 
-<h4 id="Alert"> Alert </h4>
-
-`Alert` 用于展示一个弹框提醒，需要与点击事件关联起来。
-
-示例:
-
-```swift
-presentation($showsAlert, alert: {
-                Alert(title: Text("Hello"))
-            })
-```
-
-<details close>
-  <summary>查看运行效果</summary>
-<img width="80%" src="images/example/Alert.png"/>
-</details>
-
-[🔝](#Special_D)
  
 <h4 id="UIViewController"> UIViewController </h4>
 
@@ -775,6 +756,96 @@ TabbedView(selection: $index) {
 <h4 id="VSplitView"> VSplitView </h4> 
 
 尚未发布
+
+
+<h4 id="Alert"> Alert </h4>
+
+`Alert` 用于展示一个弹框提醒，需要与点击事件关联起来。
+
+示例:
+
+```swift
+presentation($showsAlert, alert: {
+                Alert(title: Text("Hello"))
+            })
+```
+
+<details close>
+  <summary>查看运行效果</summary>
+<img width="80%" src="images/example/Alert.png"/>
+</details>
+
+[🔝](#Alert_D)
+
+
+<h4 id="ActionSheet"> ActionSheet </h4>
+
+`ActionSheet` 用于弹出一个选择框。
+
+示例:
+
+```swift
+ActionSheet(title: Text("Title"),
+            message: Text("Message"),
+            buttons:
+    [.default(Text("Default"), onTrigger: {
+        print("Default")
+        self.showSheet = false
+    }),.destructive(Text("destructive"), onTrigger: {
+        print("destructive")
+        self.showSheet = false
+    }),.cancel({
+        print("Cancel")
+        self.showSheet = false
+    })])
+```
+
+<details close>
+  <summary>查看运行效果</summary>
+<img width="80%" src="images/example/ActionSheet.png"/>
+</details>
+
+[🔝](#Alert_D)
+
+
+<h4 id="Modal"> Modal </h4>
+
+`Modal` 用于弹出一个视图。
+
+示例:
+
+```swift
+Modal(Text("Modal View"),onDismiss: {
+    print("View Dismiss !")
+})
+```
+
+<details close>
+  <summary>查看运行效果</summary>
+<img width="80%" src="images/example/Modal.png"/>
+</details>
+
+[🔝](#Alert_D)
+
+
+<h4 id="Popover"> Popover </h4>
+
+`Popover` 用于弹出一个视图，样式见下方运行结果。
+
+示例:
+
+```swift
+Popover(content: Text("Popover View")) {
+    print("Popover Dismiss !")
+}
+```
+
+<details close>
+  <summary>查看运行效果</summary>
+<img width="80%" src="images/example/Popover.png"/>
+</details>
+
+[🔝](#Alert_D)
 
 
 ## 📎 About
