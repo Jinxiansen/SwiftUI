@@ -8,8 +8,10 @@ assignees: ''
 ---
 
 ## Version
-macOS version: ..
+macOS version:
+
 xCode version: 
 
 ## Description
+
 Describe your problem:
