@@ -10,7 +10,7 @@ assignees: ''
 ## Version
 macOS version:
 
-xCode version: 
+Xcode version: 
 
 ## Description
 
