@@ -15,7 +15,7 @@ struct NavigationButtonPage : View {
                 .color(.orange)
                 .font(.largeTitle)
             }
-//            .navigationBarItem(title: Text("Page"))
+            .navigationBarTitle(Text("Page"))
     }
 }
 
