@@ -12,10 +12,11 @@ For the content described in this article, by default you have some experience b
 
 When learning and using `SwiftUI`, if you have any questions, you can join the SwiftUI QQ Group: **18552966** to discuss communication.
 
--- 
+---
+
 If you fail to compile with **Xcode 11.0 beta 2 (11M337n)**, [please click here!] (https://github.com/Jinxiansen/SwiftUI/issues/7)
 
---
+---
 
 [中文版🇨🇳](README_CN.md)
 
