@@ -45,9 +45,8 @@ struct ContentView : View {
                     NavigationButton(destination: NavigationButtonPage()) {
                         PageRow(title: "NavigationButton",subTitle: "按下时触发导航跳转的按钮")
                     }
-                    PresentationButton(PageRow(title: "PresentationButton", subTitle: "触发时显示内容的按钮控件"),
-                                       destination: Text("I'm Text")) {
-                                        print("Present 🦄")
+                    PresentationButton(destination: Text("PresentationButton 🦄")) {
+                        PageRow(title: "PresentationButton", subTitle: "触发时显示内容的按钮控件")
                     }
                     NavigationButton(destination: EditButtonPage()) {
                         PageRow(title: "EditButton",subTitle: "用于切换当前编辑模式的按钮")
@@ -96,10 +95,10 @@ struct ContentView : View {
                     }
                     NavigationButton(destination: GroupPage()) {
                         PageRow(title: "Group",subTitle: "用于集合多个视图，对 Group 设置的属性，将作用于每个子视图")
-                        }.frame(height: 80)
+                        }.frame(height: Length(80))
                     NavigationButton(destination: SectionPage()) {
                         PageRow(title: "Section",subTitle: "用于创建带头/尾部的视图内容，一般结合 `List` 组件使用")
-                        }.frame(height: 80)
+                        }.frame(height: Length(80))
                 }
                 Section(header: Text("导航视图")) {
                     NavigationButton(destination: NavigationViewPage()) {

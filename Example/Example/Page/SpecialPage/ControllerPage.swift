@@ -15,11 +15,17 @@ struct ControllerPage<T: UIViewController> : UIViewControllerRepresentable {
     typealias UIViewControllerType = UIViewController
     
     func makeUIViewController(context: UIViewControllerRepresentableContext<ControllerPage>) -> UIViewController {
+        debugPrint("Init --- ")
         return T()
     }
     
     func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<ControllerPage>) {
-        debugPrint("\(#function)：\(type(of: T.self))")
+        debugPrint("Log -- \(#function)：\(type(of: T.self))")
+        if let vc = uiViewController as? UIKitController {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                vc.button.setTitle("Change Title", for: .normal)
+            }
+        }
     }
     
 }

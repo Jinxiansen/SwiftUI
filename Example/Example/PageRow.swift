@@ -32,7 +32,7 @@ struct PageRow : View {
 #if DEBUG
 struct PageRow_Previews : PreviewProvider {
     static var previews: some View {
-        PageRow(title: "一条数据")
+        PageRow(title: "一条数据", subTitle: "")
     }
 }
 #endif
