@@ -12,6 +12,11 @@
 
 在了解和使用 `SwiftUI` 过程中，如果有疑问之处，可加入 SwiftUI QQ 交流群：**18552966** ，共同交流。
 
+-- 
+如果你使用 Xcode 11.0 beta 2 (11M337n) 编译报错，[参考这里](https://github.com/Jinxiansen/SwiftUI/issues/7)
+
+--
+
 [English 📔](README.md)
 
 ### [Whats New in SwiftUI?](https://developer.apple.com/xcode/swiftui/)
