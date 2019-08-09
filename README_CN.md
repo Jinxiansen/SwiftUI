@@ -871,4 +871,4 @@ email : hi@jinxiansen.com
 
 ## 📄 License	
 
-SwiftUI is released under the [GPL-3.0 license](LICENSE). See LICENSE for details.
+SwiftUI is released under the [MIT license](LICENSE). See LICENSE for details.
