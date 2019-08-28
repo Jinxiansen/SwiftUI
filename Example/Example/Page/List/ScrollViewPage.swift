@@ -20,7 +20,8 @@ struct ScrollViewPage : View {
             Divider()
             Text("Views and controls are the visual building blocks of your app’s user interface.")
             }
-            .border(Color.gray.gradient, width: 1,cornerRadius: 10)
+            .border(Color.gray.gradient, width: 1)
+            .cornerRadius(10)
             .padding(10)
             .navigationBarTitle(Text("ScrollView"))
     }

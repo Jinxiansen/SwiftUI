@@ -17,10 +17,10 @@ struct WebImagePage : View {
         Image(uiImage: self.uiImage ?? placeholderImage)
             .resizable()
             .onAppear(perform: downloadWebImage)
-            .frame(width: Length(80),
-                   height: Length(80),
+            .frame(width: 80,
+                   height: 80,
                    alignment: .center)
-            .tapAction {
+            .onTapGesture {
                 print("Tap ")
         }.navigationBarTitle(Text("WebImage"))
     }

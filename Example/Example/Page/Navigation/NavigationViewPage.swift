@@ -12,14 +12,18 @@ struct NavigationViewPage : View {
     var body: some View {
         NavigationView {
             Text("🧚‍♂️🧚‍♀️🧜‍♂️🧜‍♀️🧞‍♂️🧞‍♀️").blur(radius: 5)
-            Text("Swifter Swifter").bold().color(.orange).font(.largeTitle)
-            }.navigationBarTitle(Text("NavigationView"))
-            .navigationBarItems(trailing: Button(action: {
-                print("Tap")
-                
-            }, label: {
-                Text("Right").color(.orange)
-            }))
+            Text("Swifter Swifter")
+            .bold()
+                .foregroundColor(.orange)
+                .font(.largeTitle)
+        }
+    .navigationBarTitle(Text("NavigationView"))
+        .navigationBarItems(trailing: Button(action: {
+            print("Tap")
+        }, label: {
+            Text("Right").foregroundColor(.orange)
+        }))
+        
     }
 }
 

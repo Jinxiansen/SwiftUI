@@ -10,12 +10,12 @@ import SwiftUI
 
 struct NavigationButtonPage : View {
     var body: some View {
-        NavigationButton(destination: NavigationButtonPage()) {
+        NavigationLink(destination: NavigationButtonPage()) {
             Text("NavigationButton").bold()
-                .color(.orange)
+                .foregroundColor(.orange)
                 .font(.largeTitle)
             }
-            .navigationBarItem(title: Text("Page"))
+    .navigationBarTitle(Text("Page"))
     }
 }
 

@@ -20,19 +20,35 @@ struct ActionSheetPage : View {
                     .bold()
                     .font(.system(.largeTitle,
                                   design: .rounded))
-                }.presentation(sheet)
+            }//.sheet(isPresented: $showSheet, onDismiss: nil, content: <#T##() -> View#>)
+            //.presentation(sheet)
+            .actionSheet(isPresented: $showSheet, content: {sheet})
         }
+        
+//        NavigationView {
+//
+//                Button(action: {
+//                    self.showSheet = true
+//                }) {
+//                    Text("ActionSheet")
+//                        .bold()
+//                        .font(.system(.largeTitle,
+//                                      design: .rounded))
+//                    }
+//        }.sheet(isPresented: $showSheet, content: sheet)
+        
+//        ActionSheet.Button.default(<#T##label: Text##Text#>, action: <#T##(() -> Void)?##(() -> Void)?##() -> Void#>)
     }
     
-    private var sheet: ActionSheet? {
+    private var sheet: ActionSheet {
 
        let action = ActionSheet(title: Text("Title"),
                                 message: Text("Message"),
                                 buttons:
-        [.default(Text("Default"), onTrigger: {
+        [.default(Text("Default"), action: {
             print("Default")
             self.showSheet = false
-        }),.destructive(Text("destructive"), onTrigger: {
+        }),.destructive(Text("destructive"), action: {
             print("destructive")
             self.showSheet = false
         }),.cancel({
@@ -40,7 +56,8 @@ struct ActionSheetPage : View {
             self.showSheet = false
         })])
         
-        return self.showSheet ? action:nil
+//        return self.showSheet ? action:nil
+        return action
     }
 }
 
