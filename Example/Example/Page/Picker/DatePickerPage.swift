@@ -32,6 +32,9 @@ struct DatePickerPage : View {
             Text("日期选择").bold()
            //  TODO: DatePicker implement
 //            DatePicker(selection: $server.date, in: speaceDate, displayedComponents: .date, label: {})
+//           DatePicker(selection: $server.date, in: speaceDate, displayedComponents: .date) {
+//               Text("Select a date")
+//           }
         }
         .padding(10)
         .navigationBarTitle(Text("DatePicker"))
