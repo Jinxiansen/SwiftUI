@@ -15,13 +15,15 @@ struct TabBarPage : View {
     let imgs = ["hot","recommend","search","tag","setting"]
     
     var body: some View {
-        TabbedView(selection: $index) {
-            ForEach(0 ..< imgs.count) { item in
+        
+        TabView(selection: $index) {
+            ForEach(0..<imgs.count) { item in
                 TabItemPage(index: item)
-                    .tabItemLabel(Image(self.imgs[item]))
-                    .tag(item)
+                    .tabItem({Image(self.imgs[item])})
+                .tag(item)
             }
-        }.navigationBarTitle(Text("TabBar"))
+        }.navigationBarTitle("Tabbar")
+        
     }
 }
 
@@ -34,7 +36,7 @@ fileprivate struct TabItemPage: View {
             Rectangle().foregroundColor(Color.orange)
             VStack {
                 Text("\(index)")
-                    .color(.white)
+                    .foregroundColor(.white)
                     .font(.system(size: 100, design: .rounded))
                     .bold()
                 Image("icon")

@@ -9,6 +9,9 @@
 import SwiftUI
 import Combine
 
+// SegmentedControl is deprecated
+// https://developer.apple.com/documentation/swiftui/segmentedcontrol
+/*
 struct SegmentedControlPage : View {
     
     @State var items = (0..<5).map { "Seg \($0)" }
@@ -17,11 +20,13 @@ struct SegmentedControlPage : View {
     var body: some View {
         VStack {
             Text("SegmentedControl")
+            SegmentedControlPage(items: <#T##[String]#>, currentIndex: <#T##Int#>)
+            
             SegmentedControl(selection: $currentIndex) {
                 ForEach(0..<items.count) { index in
                     Text(self.items[index]).tag(index)
                 }
-                }.tapAction {
+                }.onTapGesture {
                     print("currentIndex: \(self.currentIndex)")
             }
         }
@@ -35,3 +40,4 @@ struct SegmentedControlPage_Previews : PreviewProvider {
     }
 }
 #endif
+*/

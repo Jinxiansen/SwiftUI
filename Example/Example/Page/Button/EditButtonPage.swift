@@ -11,11 +11,12 @@ import Combine
 
 struct EditButtonPage : View {
     
-    @ObjectBinding private var source = dataSource()
+    @ObservedObject private var source = dataSource()
     
     var body: some View {
         List {
-            ForEach(source.items) { idx in
+            
+            ForEach(source.items, id: \.self) { idx in
                 PageRow(title: "\(idx)")
                 }
                 .onDelete(perform: deletePlace)
@@ -26,7 +27,7 @@ struct EditButtonPage : View {
     }
     
     func deletePlace(at offset: IndexSet) {
-        if let last = offset.last?.id {
+        if let last = offset.last {
             source.items.remove(at: last)
             print(source.items.count)
         }
@@ -35,10 +36,11 @@ struct EditButtonPage : View {
     func movePlace(from source: IndexSet, to destination: Int) {
         print(source,destination)
     }
+    
+    
 }
 
-
-class dataSource: BindableObject {
+class dataSource: ObservableObject {
     
     public var didChange = PassthroughSubject<Void, Never>()
 

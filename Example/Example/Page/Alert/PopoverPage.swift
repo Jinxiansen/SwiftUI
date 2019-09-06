@@ -19,11 +19,14 @@ struct PopoverPage : View {
                 print(self.showPop)
             }) {
                 Text("Popover").bold().font(.system(.largeTitle, design: .monospaced))
-            }.presentation(popView)
+            }//.presentation(popView)
+            .popover(isPresented: $showPop, content: {
+                ImagePage()
+            })
         }
     }
-    
-    private var popView: Popover? {
+    /*
+    private var popView: PopImagePageover? {
         
         // 以下 Dismiss 回调，按照官方文档说明是： Action which informs the caller when the popover has been dismissed.
         // 但实际上在pop消失后，下面 dismiss 回调始终无法触发，导致无法再次show，也许是个bug。
@@ -33,6 +36,7 @@ struct PopoverPage : View {
         }
         return self.showPop ? pop:nil
     }
+    */
 }
 
 #if DEBUG

@@ -20,7 +20,7 @@ struct PickerPage : View {
             VStack {
                 Text("Left Value:")
                 Text("\(self.leftSource[self.leftIndex])")
-                    .color(.orange)
+                    .foregroundColor(.orange)
                     .bold()
                     .font(.largeTitle)
                 Picker(selection: $leftIndex, label: Text("Left Picker")) {
@@ -32,7 +32,7 @@ struct PickerPage : View {
             VStack {
                 Text("Right Value:")
                 Text("\(self.rightSource[self.rightIndex])")
-                    .color(.black)
+                    .foregroundColor(.black)
                     .bold()
                     .font(.largeTitle)
                 Picker(selection: $rightIndex, label: Text("Right Picker")) {
@@ -41,7 +41,8 @@ struct PickerPage : View {
                     }
                     }.frame(width: UIScreen.main.bounds.width/2)
             }
-        }.navigationBarTitle(Text("Picker"))
+        }//.navigationBarTitle(Text("Picker"))
+        .navigationBarTitle(Text("Picker"))
     }
 }
 

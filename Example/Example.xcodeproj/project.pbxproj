@@ -46,6 +46,7 @@
 		41FE99E722AAD08A008135A0 /* NavigationButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE99E622AAD08A008135A0 /* NavigationButtonPage.swift */; };
 		41FE99E922AAD7B0008135A0 /* EditButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE99E822AAD7B0008135A0 /* EditButtonPage.swift */; };
 		41FE99F022AADF9F008135A0 /* DatePickerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE99EF22AADF9F008135A0 /* DatePickerPage.swift */; };
+		D74985BC231634DA00C4D46D /* Window+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74985BB231634DA00C4D46D /* Window+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		41FE99E622AAD08A008135A0 /* NavigationButtonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButtonPage.swift; sourceTree = "<group>"; };
 		41FE99E822AAD7B0008135A0 /* EditButtonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButtonPage.swift; sourceTree = "<group>"; };
 		41FE99EF22AADF9F008135A0 /* DatePickerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerPage.swift; sourceTree = "<group>"; };
+		D74985BB231634DA00C4D46D /* Window+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Window+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			children = (
 				4132A46222AD709300A8DBBE /* Color+Ext.swift */,
 				4132A46522AD70D400A8DBBE /* View+Ext.swift */,
+				D74985BB231634DA00C4D46D /* Window+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				41977FF522ACA74600FD47FE /* WebImagePage.swift in Sources */,
 				4196ABE722AA268A008B8FD2 /* TextFieldPage.swift in Sources */,
 				4161B32722AB68F600CD5A1B /* HStackPage.swift in Sources */,
+				D74985BC231634DA00C4D46D /* Window+Ext.swift in Sources */,
 				4164489D22AA6D6500A93AF2 /* ImagePage.swift in Sources */,
 				4161B32922AB695A00CD5A1B /* VStackPage.swift in Sources */,
 				415F044B22AB9A96003E59FC /* AlertPage.swift in Sources */,

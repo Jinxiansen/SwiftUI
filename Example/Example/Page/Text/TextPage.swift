@@ -16,7 +16,7 @@ struct TextPage : View {
         VStack(spacing: 15) {
             Text("SwiftUI")
             Text("SwiftUI")
-                .color(.orange)
+                .foregroundColor(.orange)
                 .bold()
                 .font(.system(.largeTitle))
                 .fontWeight(.medium)
@@ -25,14 +25,14 @@ struct TextPage : View {
             
             Text(github)
                 .underline(true, color: Color.gray)
-                .font(.system(size: 16, design: .serif)).tapAction {
+                .font(.system(size: 16, design: .serif)).onTapGesture {
                     print(github)
             }
             
             HStack {
                 Text("Text")
                 Text("TextField").bold()
-                Text("SecureField").color(.orange)
+                Text("SecureField").foregroundColor(.orange)
             }
             
             Text("Views and controls are the visual building blocks of your app’s user interface." +

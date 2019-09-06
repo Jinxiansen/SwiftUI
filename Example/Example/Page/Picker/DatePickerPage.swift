@@ -10,9 +10,35 @@ import SwiftUI
 import Combine
 struct DatePickerPage : View {
     
-    @ObjectBinding var server = DateServer()
+    @ObservedObject var server = DateServer()
+    
+    var speaceDate: Range<Date>?
+    
+    init() {
+        let soon = Calendar.current.date(byAdding: .year,
+        value: -1,
+        to: server.date) ?? Date()
+        
+        let later = Calendar.current.date(byAdding: .year,
+        value: 1,
+        to: server.date) ?? Date()
+         speaceDate = soon..<later
+    }
     
     var body: some View {
+        
+        
+        VStack(spacing: 10) {
+            Text("日期选择").bold()
+           //  TODO: DatePicker implement
+//            DatePicker(selection: $server.date, in: speaceDate, displayedComponents: .date, label: {})
+//           DatePicker(selection: $server.date, in: speaceDate, displayedComponents: .date) {
+//               Text("Select a date")
+//           }
+        }
+        .padding(10)
+        .navigationBarTitle(Text("DatePicker"))
+        /*
         VStack(alignment: .center, spacing: 10) {
             Text("日期选择").bold()
             DatePicker(
@@ -28,11 +54,13 @@ struct DatePickerPage : View {
             }
             .padding(.top)
             .navigationBarTitle(Text("DatePicker"))
+        */
+        
     }
 }
 
 
-class DateServer: BindableObject {
+class DateServer: ObservableObject {
     
     var didChange = PassthroughSubject<DateServer,Never>()
     var date: Date = Date() {
