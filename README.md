@@ -4,7 +4,8 @@
 [![Swift](https://img.shields.io/badge/Swift-5.1-orange.svg)](https://swift.org)
 [![Xcode](https://img.shields.io/badge/Xcode-11.0-blue.svg)](https://developer.apple.com/xcode)
 [![Xcode](https://img.shields.io/badge/macOS-15.0-blue.svg)](https://developer.apple.com/macOS)
-[![MIT](https://img.shields.io/badge/licenses-GPL3.0-red.svg)](https://opensource.org/licenses/GPL-3.0)
+[![MIT](https://img.shields.io/badge/licenses-MIT-red.svg)](https://opensource.org/licenses/MIT)
+
 
 This article refers to SwiftUI [apple example](https://github.com/Jinxiansen/SwiftUI/tree/doc) and records the results of the exploration here, I hope to be helpful to you.
 
@@ -12,14 +13,7 @@ For the content described in this article, by default you have some experience b
 
 When learning and using `SwiftUI`, if you have any questions, you can join the SwiftUI QQ Group: **18552966** to discuss communication.
 
----
-
-If you fail to compile with **Xcode 11.0 beta 2 (11M337n)**, [please click here!](https://github.com/Jinxiansen/SwiftUI/issues/7)
-
----
-
 [中文版🇨🇳](README_CN.md)
-
 
 ### 💻 Requirements
 
