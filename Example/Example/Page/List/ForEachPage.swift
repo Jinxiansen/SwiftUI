@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ForEachPage : View {
     
-    let data = (0..<5)//.map { $0 }
+    let data = (0..<5)
     
     var body: some View {
         

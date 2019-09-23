@@ -28,33 +28,19 @@ struct DatePickerPage : View {
     var body: some View {
         
         
-        VStack(spacing: 10) {
-            Text("日期选择").bold()
-           //  TODO: DatePicker implement
-//            DatePicker(selection: $server.date, in: speaceDate, displayedComponents: .date, label: {})
-//           DatePicker(selection: $server.date, in: speaceDate, displayedComponents: .date) {
-//               Text("Select a date")
-//           }
-        }
-        .padding(10)
-        .navigationBarTitle(Text("DatePicker"))
-        /*
-        VStack(alignment: .center, spacing: 10) {
-            Text("日期选择").bold()
-            DatePicker(
-                $server.date,
-                minimumDate: Calendar.current.date(byAdding: .year,
-                                                   value: -1,
-                                                   to: server.date),
-                maximumDate: Calendar.current.date(byAdding: .year,
-                                                   value: 1,
-                                                   to: server.date),
-                displayedComponents: .date
-            )
+        VStack {
+            VStack(spacing: 10) {
+                Text("日期选择").bold()
+   
+                DatePicker(selection: $server.date, in: server.spaceDate, displayedComponents: .date, label: {
+                    Text("")
+                })
             }
             .padding(.top)
             .navigationBarTitle(Text("DatePicker"))
-        */
+            
+        }
+       
         
     }
 }
@@ -68,6 +54,18 @@ class DateServer: ObservableObject {
             didChange.send(self)
             print("Date Changed: \(date)")
         }
+    }
+    
+    var spaceDate: ClosedRange<Date>  {
+        let soon = Calendar.current.date(byAdding: .year,
+        value: -1,
+        to: date) ?? Date()
+        
+        let later = Calendar.current.date(byAdding: .year,
+        value: 1,
+        to: date) ?? Date()
+        let speaceDate = soon...later
+        return speaceDate
     }
 }
 

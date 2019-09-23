@@ -19,7 +19,7 @@ struct PopoverPage : View {
                 print(self.showPop)
             }) {
                 Text("Popover").bold().font(.system(.largeTitle, design: .monospaced))
-            }//.presentation(popView)
+            }
             .popover(isPresented: $showPop, content: {
                 ImagePage()
             })

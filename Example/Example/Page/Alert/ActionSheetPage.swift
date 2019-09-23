@@ -20,24 +20,11 @@ struct ActionSheetPage : View {
                     .bold()
                     .font(.system(.largeTitle,
                                   design: .rounded))
-            }//.sheet(isPresented: $showSheet, onDismiss: nil, content: <#T##() -> View#>)
-            //.presentation(sheet)
+            }
             .actionSheet(isPresented: $showSheet, content: {sheet})
         }
         
-//        NavigationView {
-//
-//                Button(action: {
-//                    self.showSheet = true
-//                }) {
-//                    Text("ActionSheet")
-//                        .bold()
-//                        .font(.system(.largeTitle,
-//                                      design: .rounded))
-//                    }
-//        }.sheet(isPresented: $showSheet, content: sheet)
-        
-//        ActionSheet.Button.default(<#T##label: Text##Text#>, action: <#T##(() -> Void)?##(() -> Void)?##() -> Void#>)
+
     }
     
     private var sheet: ActionSheet {
@@ -56,7 +43,6 @@ struct ActionSheetPage : View {
             self.showSheet = false
         })])
         
-//        return self.showSheet ? action:nil
         return action
     }
 }
