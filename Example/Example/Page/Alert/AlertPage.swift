@@ -13,6 +13,8 @@ struct AlertPage : View {
     @State var showAlert = false
     
     var body: some View {
+        
+        
         Button(action: {
             self.showAlert = true
             print("Tap")

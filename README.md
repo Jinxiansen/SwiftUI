@@ -143,7 +143,7 @@ Example:
 
 ```swift
 Text("SwiftUI")
-    .color(.orange)
+    .foregroundColor(.orange)
     .bold()
     .font(.system(.largeTitle))
     .fontWeight(.medium)
@@ -177,7 +177,7 @@ TextField(self.$name, placeholder: self.nameText, onEditingChanged: { changed in
 }}
 .padding(10)
 .frame(height: 50)
-.textFieldStyle(.roundedBorder)
+.textFieldStyle(RoundedBorderTextFieldStyle())
 .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
 
 ```
@@ -201,8 +201,8 @@ The `Image` control is used to display images, example:
 ```swift
 Image("icon")
     .resizable()
-    .frame(width: Length(100),
-           height: Length(100),
+    .frame(width: 100,
+           height: 100,
            alignment: .center)
 ```
 
@@ -224,10 +224,10 @@ var body: some View {
         Image(uiImage: self.uiImage ?? placeholderImage)
             .resizable()
             .onAppear(perform: downloadWebImage)
-            .frame(width: Length(80),
-                   height: Length(80),
+            .frame(width: 80,
+                   height: 80,
                    alignment: .center)
-            .tapAction {
+            .onTapGesture {
                 print("Tap ")
         }
     }
@@ -276,9 +276,12 @@ Waiting for release.
 Example:
 
 ```swift
-NavigationButton(destination: NavigationButtonPage()) {
-    Text("NavigationButton").bold().color(.orange).font(.largeTitle)
-    }.navigationBarItem(title: Text("Page"))
+NavigationLink(destination: NavigationButtonPage()) {
+            Text("NavigationButton").bold()
+                .foregroundColor(.orange)
+                .font(.largeTitle)
+            }
+    .navigationBarTitle(Text("Page"))
 ```     
 
 <details close>
@@ -288,23 +291,10 @@ NavigationButton(destination: NavigationButtonPage()) {
 
 [🔝](#Button_D)
 
-<h4 id="PresentationButton"> PresentationButton </h4>
+<h4 id="PresentationButton" style='color:red'> PresentationButton is deprecated</h4>
 
-`PresentationButton` is used to pop up a page.
+`PresentationButton` ~~is used to pop up a page.~~ has deprecated, please use `NavigationLink` 
 
-Example:
-
-```swift
-PresentationButton(PageRow(title: "PresentationButton", subTitle: "pop up a page"),
-                   destination: Text("I'm Text")) {
-                    print("Present 🦄")
-                   }
-```     
-
-<details close>
-  <summary>View running results</summary>
-<img width="40%" src="images/example/PresentationButton.png"/>
-</details>
 
 [🔝](#Button_D)
 
@@ -358,16 +348,12 @@ Picker(selection: $leftIndex, label: Text("Picker")) {
 Example:
 
 ```swift
-DatePicker(
-    $server.date,
-    minimumDate: Calendar.current.date(byAdding: .year,
-                                       value: -1,
-                                       to: server.date),
-    maximumDate: Calendar.current.date(byAdding: .year,
-                                       value: 1,
-                                       to: server.date),
-    displayedComponents: .date
-)
+
+                DatePicker(selection: $server.date, 
+                in: server.spaceDate, 
+                displayedComponents: .date, label: {
+                    Text("")
+                })
 ```     
 
 <details close>
@@ -428,7 +414,7 @@ Stepper(value: $value, step: 2, onEditingChanged: { c in
 
 [🔝](#Picker_D)
 
-<h4 id="SegmentedControl"> SegmentedControl </h4>
+<h4 id="SegmentedControl" style="color:red">SegmentedControl is deprecated</h4>
 
 `SegmentedControl ` is used for segmentation condition selection, example:
 
@@ -615,9 +601,10 @@ ScrollView {
     Divider()
     Text("Views and ... user interface.")
     }
-    .border(style, width: 1,cornerRadius: 10)
-    .padding(10)
-    .navigationBarTitle(Text("ScrollView"))
+    .border(Color.gray.gradient, width: 1)
+            .cornerRadius(10)
+            .padding(10)
+            .navigationBarTitle(Text("ScrollView"))
 ```
 
 <details close>
@@ -634,7 +621,7 @@ ScrollView {
 Example:
 
 ```swift
-let data = (0..<5).map { $0 }
+let data = (0..<5)
 var body: some View {
     ForEach(data) { e in
         Text("Hello \(e)")
@@ -705,9 +692,13 @@ Example:
 
 ```swift
 NavigationView {
-    Text("🧚‍♂️🧚‍♀️🧜‍♂️🧜‍♀️🧞‍♂️🧞‍♀️").blur(radius: 5)
-    Text("Swifter Swifter").bold().color(.orange).font(.largeTitle)
-}.navigationBarTitle(Text("NavigationView"))
+            Text("🧚‍♂️🧚‍♀️🧜‍♂️🧜‍♀️🧞‍♂️🧞‍♀️").blur(radius: 5)
+            Text("Swifter Swifter")
+            .bold()
+                .foregroundColor(.orange)
+                .font(.largeTitle)
+        }
+    .navigationBarTitle(Text("NavigationView"))
 ```
 
 <details close>
@@ -757,14 +748,17 @@ Waiting for release.
 Example:
 
 ```swift
-presentation($showsAlert, alert: {
-                Alert(title: Text("Hello"))
-            })
+alert(isPresented: $showAlert, content: {
+            Alert(title: Text("确定要支付这100000000美元吗？"),
+                  message: Text("请谨慎操作\n一旦确认，钱款将立即转入对方账户"),
+                  primaryButton: .destructive(Text("确认")) { print("转出中...") },
+                  secondaryButton: .cancel())
+        }).navigationBarTitle(Text("Alert"))
 ```
 
 <details close>
   <summary>View running results</summary>
-<img width="80%" src="images/example/Alert.png"/>
+<img width="80%" src="images/example/AlertPage.jpg"/>
 </details>
 
 [🔝](#Alert_D)
@@ -792,6 +786,10 @@ ActionSheet(title: Text("Title"),
     })])
 ```
 
+usage：
+```swift 
+.actionSheet(isPresented: $showSheet, content: {sheet})
+```
 <details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/ActionSheet.png"/>
@@ -827,9 +825,9 @@ Modal(Text("Modal View"),onDismiss: {
 Example:
 
 ```swift
-Popover(content: Text("Popover View")) {
-    print("Popover Dismiss !")
-}
+.popover(isPresented: $showPop, content: {
+                ImagePage()
+            })
 ```
 
 <details close>
