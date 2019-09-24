@@ -8,10 +8,10 @@
 
 import SwiftUI
 
-let github = "https://github.com/Jinxiansen/SwiftUI"
+private let github = "https://github.com/Jinxiansen/SwiftUI"
 
 struct TextPage : View {
-        
+
     var body: some View {
         VStack(spacing: 15) {
             Text("SwiftUI")

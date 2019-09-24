@@ -13,11 +13,11 @@ struct NavigationViewPage : View {
         NavigationView {
             Text("🧚‍♂️🧚‍♀️🧜‍♂️🧜‍♀️🧞‍♂️🧞‍♀️").blur(radius: 5)
             Text("Swifter Swifter")
-            .bold()
+                .bold()
                 .foregroundColor(.orange)
                 .font(.largeTitle)
         }
-    .navigationBarTitle(Text("NavigationView"))
+        .navigationBarTitle(Text("NavigationView"))
         .navigationBarItems(trailing: Button(action: {
             print("Tap")
         }, label: {

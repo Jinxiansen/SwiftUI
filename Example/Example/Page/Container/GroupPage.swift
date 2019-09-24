@@ -15,26 +15,26 @@ struct GroupPage : View {
             Group {
                 Text("Hello World !")
                 Text("Hello World !")
-                }
-                .padding(5)
-                .border(Color.orange.gradient,
-                        width: 1)
-                        .cornerRadius(5)
+            }
+            .padding(5)
+            .border(Color.orange.gradient,
+                    width: 1)
+                .cornerRadius(5)
             Group {
                 Text("Hello World !")
                 Text("Hello World !")
-                }.padding(5)
+            }.padding(5)
                 .border(Color.black.gradient,
                         width: 1)
-                        .cornerRadius(5)
+                .cornerRadius(5)
             Group {
                 Text("Hello World !")
                 Text("Hello World !")
-                }.padding(5)
+            }.padding(5)
                 .border(Color.purple.gradient,
                         width: 1)
                 .cornerRadius(5)
-            }.navigationBarTitle(Text("Group"))
+        }.navigationBarTitle(Text("Group"))
     }
 }
 

@@ -16,22 +16,19 @@ struct DatePickerPage : View {
     
     init() {
         let soon = Calendar.current.date(byAdding: .year,
-        value: -1,
-        to: server.date) ?? Date()
+                                         value: -1,
+                                         to: server.date) ?? Date()
         
         let later = Calendar.current.date(byAdding: .year,
-        value: 1,
-        to: server.date) ?? Date()
-         speaceDate = soon..<later
+                                          value: 1,
+                                          to: server.date) ?? Date()
+        speaceDate = soon..<later
     }
     
     var body: some View {
-        
-        
         VStack {
             VStack(spacing: 10) {
                 Text("日期选择").bold()
-   
                 DatePicker(selection: $server.date, in: server.spaceDate, displayedComponents: .date, label: {
                     Text("")
                 })
@@ -40,7 +37,7 @@ struct DatePickerPage : View {
             .navigationBarTitle(Text("DatePicker"))
             
         }
-       
+
         
     }
 }
@@ -58,12 +55,12 @@ class DateServer: ObservableObject {
     
     var spaceDate: ClosedRange<Date>  {
         let soon = Calendar.current.date(byAdding: .year,
-        value: -1,
-        to: date) ?? Date()
+                                         value: -1,
+                                         to: date) ?? Date()
         
         let later = Calendar.current.date(byAdding: .year,
-        value: 1,
-        to: date) ?? Date()
+                                          value: 1,
+                                          to: date) ?? Date()
         let speaceDate = soon...later
         return speaceDate
     }

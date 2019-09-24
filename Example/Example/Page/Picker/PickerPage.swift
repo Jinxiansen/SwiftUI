@@ -27,7 +27,7 @@ struct PickerPage : View {
                     ForEach(0..<leftSource.count) {
                         Text(self.leftSource[$0]).tag($0)
                     }
-                    }.frame(width: UIScreen.main.bounds.width/2)
+                }.frame(width: UIScreen.main.bounds.width/2)
             }
             VStack {
                 Text("Right Value:")
@@ -39,9 +39,9 @@ struct PickerPage : View {
                     ForEach(0..<rightSource.count) {
                         Text(self.rightSource[$0]).tag($0)
                     }
-                    }.frame(width: UIScreen.main.bounds.width/2)
+                }.frame(width: UIScreen.main.bounds.width/2)
             }
-        }//.navigationBarTitle(Text("Picker"))
+        }
         .navigationBarTitle(Text("Picker"))
     }
 }

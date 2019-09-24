@@ -26,7 +26,6 @@ struct SectionPage : View {
             }
             .listStyle(GroupedListStyle())
             .background(Color.white)
-            //                .listStyle(.grouped)
             
             Button(action: {
                 print("Tap")
@@ -37,21 +36,10 @@ struct SectionPage : View {
             }
             .background(Color.orange)
             .cornerRadius(5)
-            
-            /*
-            Button(action: {
-                print("Tap")
-            }) {
-                Text("SwiftUI")
-                    .foregroundColor(.white)
-                    .frame(width: UIScreen.main.bounds.width - 30,height: 45)
-                }
-                .background(Color.orange)
-                .cornerRadius(5)
- */
-            }
-            .background(Color.white)
-            .navigationBarTitle(Text("Section"))
+
+        }
+        .background(Color.white)
+        .navigationBarTitle(Text("Section"))
         
     }
 }

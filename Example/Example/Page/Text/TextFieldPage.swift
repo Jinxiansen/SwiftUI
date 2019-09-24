@@ -29,7 +29,7 @@ struct TextFieldPage : View {
                     self.endEditing(true)
                 })
             }.padding(10).frame(height: 50).textFieldStyle(RoundedBorderTextFieldStyle())
-            .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
+                .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
             
             HStack {
                 Text("密码：").foregroundColor(.secondary)
@@ -38,50 +38,16 @@ struct TextFieldPage : View {
                     self.endEditing(true)
                 }
             }.padding(10)
-            .frame(height: 50)
-            .textFieldStyle(RoundedBorderTextFieldStyle())
-            .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
+                .frame(height: 50)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
         }.offset(y: -150)
-        .navigationBarTitle(Text("TextField"))
-        
-        /*
-        VStack(spacing: 15) {
-            HStack {
-                Text("昵称：").foregroundColor(.secondary)
-                
-                
-                
-                TextField(self.$name, placeholder: self.nameText, onEditingChanged: { changed in
-//                    print("onEditing: \(changed)")
-                }) {
-                    print("userName: \(self.name)")
-                    self.endEditing(true)
-                }}
-                .padding(10) // 内间距
-                .frame(height: 50)
-                .textFieldStyle(.roundedBorder)
-                .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
-            
-            HStack {
-                Text("密码：").foregroundColor(.secondary)
-                SecureField(self.$password, placeholder: self.pwdText) {
-                    print("Password: \(self.password)")
-                    self.endEditing(true)
-                }
-                 
-                 }
-                .padding(10)
-                .frame(height: 50)
-                .textFieldStyle(.roundedBorder)
-                .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
-            
-            }.offset(y: -150)
             .navigationBarTitle(Text("TextField"))
- */
+
     }
     
     private func endEditing(_ force: Bool) {
-//        UIApplication.shared.keyWindow?.endEditing(force)
+        //        UIApplication.shared.keyWindow?.endEditing(force)
         MainApp.keyWindow?.endEditing(force)
     }
 }

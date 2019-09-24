@@ -20,7 +20,7 @@ struct TabBarPage : View {
             ForEach(0..<imgs.count) { item in
                 TabItemPage(index: item)
                     .tabItem({Image(self.imgs[item])})
-                .tag(item)
+                    .tag(item)
             }
         }.navigationBarTitle("Tabbar")
         
