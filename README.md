@@ -17,9 +17,9 @@ When learning and using `SwiftUI`, if you have any questions, you can join the S
 
 ### 💻 Requirements
 
-- macOS 15 Beta
-- Xcode 11.0 Beta
-- iOS 13.0 Beta
+- macOS 15
+- Xcode 11.0
+- iOS 13.0
 
 
 ## Directory：

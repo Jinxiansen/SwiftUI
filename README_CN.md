@@ -25,9 +25,9 @@
 
 ## 💻 所需环境
 
-- macOS 15 Beta
-- Xcode 11.0 Beta
-- iOS 13.0 Beta
+- macOS 15
+- Xcode 11.0
+- iOS 13.0
 
 
 ## 📂 目录：
@@ -270,7 +270,7 @@ Button(action: {
 尚未发布
 
 
-<h4 id="NavigationButton"> NavigationButton 已经弃用了</h4>
+<h4 id="NavigationButton"> NavigationButton 已弃用</h4>
 
 `NavigationButtonPage ` 用以 Push 到下一个导航页面。
 
