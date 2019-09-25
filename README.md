@@ -44,7 +44,7 @@ When learning and using `SwiftUI`, if you have any questions, you can join the S
 	- [EditButton](#EditButton)
 	- [PasteButton](#PasteButton)
 
-* <span id="Button_D">Button</span>
+* <span id="Picker_D">Picker</span>
 	- [Picker](#Picker)
 	- [DatePicker](#DatePicker)
 	- [Toggle](#Toggle)
