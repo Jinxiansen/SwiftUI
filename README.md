@@ -15,6 +15,10 @@ When learning and using `SwiftUI`, if you have any questions, you can join the S
 
 [中文版🇨🇳](README_CN.md)
 
+### ⭐️ Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/Jinxiansen/SwiftUI.svg)](https://starchart.cc/Jinxiansen/SwiftUI)
+
 ### 💻 Requirements
 
 - macOS 15
