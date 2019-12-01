@@ -48,10 +48,6 @@ struct ContentView : View {
                     NavigationLink(destination: Text("I'm Text")) {
                         PageRow(title: "PresentationButton",subTitle: "触发时显示内容的按钮控件")
                     }
-                    //                    NavigationLink(PageRow(title: "PresentationButton", subTitle: "触发时显示内容的按钮控件"),
-                    //                                       destination: Text("I'm Text")) {
-                    //                                        print("Present 🦄")
-                    //                    }
                     NavigationLink(destination: EditButtonPage()) {
                         PageRow(title: "EditButton",subTitle: "用于切换当前编辑模式的按钮")
                     }
@@ -73,10 +69,7 @@ struct ContentView : View {
                     NavigationLink(destination: StepperPage()) {
                         PageRow(title: "Stepper",subTitle: "用以增加或减少数值")
                     }
-                    // deprecated
-                    //                    NavigationLink(destination: SegmentedControlPage()) {
-                    //                        PageRow(title: "SegmentedControl", subTitle: "用以从一组选项中进行选择")
-                    //                    }
+
                 }
                 
                 Section(header: Text("布局")) {
@@ -109,7 +102,7 @@ struct ContentView : View {
                     NavigationLink(destination: NavigationViewPage()) {
                         PageRow(title: "NavigationView",subTitle: "用于创建包含顶部导航栏的视图容器")
                     }
-                    NavigationLink(destination: TabBarPage()) {
+                    NavigationLink(destination: TableViewPage()) {
                         PageRow(title: "TabBar",subTitle: "用于创建包含底部 TabBar 的视图容器")
                     }
                 }

@@ -83,7 +83,7 @@
 
 * <span id="Architectural_D">Architectural Views 导航、切换、排列</span>
 	- [NavigationView](#NavigationView)
-	- [TabbedView](#TabbedView)
+	- [TableView](#TableView)
 	- [HSplitView](#HSplitView)
 	- [VSplitView](#VSplitView)
 
@@ -718,25 +718,28 @@ NavigationView {
 
 [🔝](#Layout_D)
 
-<h4 id="TabbedView"> TabbedView </h4>
+<h4 id="TableView"> TableView </h4>
 
-`TabBar` 用于创建包含底部 **TabBar** 的视图容器。
+`TableView` 用于创建包含底部 ** TabBar** 的视图容器。
 
 示例:
 
 ```swift
-TabbedView(selection: $index) {
-    ForEach(0 ..< imgs.count) { item in
+TabView(selection: $index) {
+    ForEach(0..<imgs.count) { item in
         TabItemPage(index: item)
-            .tabItemLabel(Image(self.imgs[item]))
-            .tag(item)
+            .tabItem{
+                Image(self.imgs[item])
+                Text("\(item)")
+        }
+        .tag(item)
     }
 }
 ```
 
 <details close>
   <summary>查看运行效果</summary>
-<img width="80%" src="images/example/TabBar.png"/>
+<img width="80%" src="images/example/TableView.png"/>
 </details>
 
 [🔝](#Layout_D)
