@@ -79,7 +79,7 @@ When learning and using `SwiftUI`, if you have any questions, you can join the S
 
 * <span id="Architectural_D">Architectural Views</span>
 	- [NavigationView](#NavigationView)
-	- [TableView](#TableView)
+	- [TabView](#TabView)
 	- [HSplitView](#HSplitView)
 	- [VSplitView](#VSplitView)
 
@@ -712,9 +712,9 @@ NavigationView {
 
 [🔝](#Layout_D)
 
-<h4 id="TableView"> TableView </h4>
+<h4 id="TabView"> TabView </h4>
 
-`TableView` is used to create a view container that contains the bottom ** TabBar**.
+`TabView` is used to create a view container that contains the bottom ** TabBar**.
 
 Example:
 
@@ -733,7 +733,7 @@ TabView(selection: $index) {
 
 <details close>
   <summary>View running results</summary>
-<img width="80%" src="images/example/TableView.png"/>
+<img width="80%" src="images/example/TabView.png"/>
 </details>
 
 [🔝](#Layout_D)
