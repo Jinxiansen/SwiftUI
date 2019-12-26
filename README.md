@@ -76,6 +76,7 @@ When learning and using `SwiftUI`, if you have any questions, you can join the S
 	- [Group](#Group)
 	- [GroupBox](#GroupBox)
 	- [Section](#Section)
+  - [Form](#Form)
 
 * <span id="Architectural_D">Architectural Views</span>
 	- [NavigationView](#NavigationView)
@@ -684,6 +685,24 @@ Section(header: Text("I'm header"), footer: Text("I'm footer")) {
 <details close>
   <summary>View running results</summary>
 <img width="80%" src="images/example/Section.png"/>
+</details>
+
+<h4 id="Form"> Form </h4>
+
+`Form` A container for grouping controls used for data entry, such as in settings or inspectors.
+
+Example:
+
+```swift
+Form {
+   TextField("First Name", text: $firstName)
+   TextField("Last Name", text: $lastName)
+}
+```
+
+<details close>
+  <summary>View running results</summary>
+<img width="80%" src="images/example/Form.png"/>
 </details>
 
 [🔝](#Layout_D)

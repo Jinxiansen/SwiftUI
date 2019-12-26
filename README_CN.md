@@ -80,6 +80,7 @@
 	- [Group](#Group)
 	- [GroupBox](#GroupBox)
 	- [Section](#Section)
+  - [Form](#Form)
 
 * <span id="Architectural_D">Architectural Views 导航、切换、排列</span>
 	- [NavigationView](#NavigationView)
@@ -690,6 +691,24 @@ Section(header: Text("I'm header"), footer: Text("I'm footer")) {
 <details close>
   <summary>查看运行效果</summary>
 <img width="80%" src="images/example/Section.png"/>
+</details>
+
+<h4 id="Form"> Form </h4>
+
+`Form` 是对一组数据输入进行控制的容器。
+
+Example:
+
+```swift
+Form {
+   TextField("First Name", text: $firstName)
+   TextField("Last Name", text: $lastName)
+}
+```
+
+<details close>
+  <summary>查看运行效果</summary>
+<img width="80%" src="images/example/Form.png"/>
 </details>
 
 [🔝](#Layout_D)
