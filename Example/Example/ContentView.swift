@@ -97,6 +97,9 @@ struct ContentView : View {
                     NavigationLink(destination: SectionPage()) {
                         PageRow(title: "Section",subTitle: "用于创建带头/尾部的视图内容，一般结合 `List` 组件使用")
                     }.frame(height: 80)
+                    NavigationLink(destination: FormPage(firstName: "", lastName: "")) {
+                           PageRow(title: "Form",subTitle: "表单视图")
+                    }
                 }
                 Section(header: Text("导航视图")) {
                     NavigationLink(destination: NavigationViewPage()) {
