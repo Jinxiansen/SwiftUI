@@ -15,6 +15,7 @@ struct PickerPage : View {
     
     let leftSource = (0..<10).map { $0%2 == 0 ? "🧜‍♀️\($0)":"🧚‍♀️\($0)" }
     let rightSource = (11...36).map { String($0 - 1, radix: $0).uppercased() }
+    
     var body: some View {
         HStack {
             VStack {

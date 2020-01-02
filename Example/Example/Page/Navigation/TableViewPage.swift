@@ -11,11 +11,9 @@ import SwiftUI
 struct TableViewPage : View {
     
     @State private var index = 0 // 默认选中索引
-    
     let imgs = ["hot","recommend","search","tag","setting"]
     
     var body: some View {
-        
         TabView(selection: $index) {
             ForEach(0..<imgs.count) { item in
                 TabItemPage(index: item)

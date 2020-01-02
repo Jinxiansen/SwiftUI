@@ -37,7 +37,6 @@ struct EditButtonPage : View {
         print(source,destination)
     }
     
-    
 }
 
 class dataSource: ObservableObject {
