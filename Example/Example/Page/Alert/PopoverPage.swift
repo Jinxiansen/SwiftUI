@@ -25,18 +25,6 @@ struct PopoverPage : View {
             })
         }
     }
-    /*
-    private var popView: PopImagePageover? {
-        
-        // 以下 Dismiss 回调，按照官方文档说明是： Action which informs the caller when the popover has been dismissed.
-        // 但实际上在pop消失后，下面 dismiss 回调始终无法触发，导致无法再次show，也许是个bug。
-        let pop = Popover(content: ImagePage()) {
-            print("Popover Dismiss !")
-            self.showPop = false
-        }
-        return self.showPop ? pop:nil
-    }
-    */
 }
 
 #if DEBUG

@@ -40,12 +40,13 @@
 		41E4DCCE22B4ADB000F78522 /* PopoverPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E4DCCD22B4ADB000F78522 /* PopoverPage.swift */; };
 		41E4DCD022B4B4FF00F78522 /* ActionSheetPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E4DCCF22B4B4FF00F78522 /* ActionSheetPage.swift */; };
 		41F36F0A22AA84D600B9172D /* ButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F36F0922AA84D600B9172D /* ButtonPage.swift */; };
-		41F36F0C22AA87AF00B9172D /* TabBarPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F36F0B22AA87AF00B9172D /* TabBarPage.swift */; };
+		41F36F0C22AA87AF00B9172D /* TableViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F36F0B22AA87AF00B9172D /* TableViewPage.swift */; };
 		41F36F0E22AA8AEC00B9172D /* WebViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F36F0D22AA8AEC00B9172D /* WebViewPage.swift */; };
 		41F36F1022AA915300B9172D /* ListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F36F0F22AA915300B9172D /* ListPage.swift */; };
 		41FE99E722AAD08A008135A0 /* NavigationButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE99E622AAD08A008135A0 /* NavigationButtonPage.swift */; };
 		41FE99E922AAD7B0008135A0 /* EditButtonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE99E822AAD7B0008135A0 /* EditButtonPage.swift */; };
 		41FE99F022AADF9F008135A0 /* DatePickerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE99EF22AADF9F008135A0 /* DatePickerPage.swift */; };
+		BD99734E23B49BB800A3E3F0 /* FormPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99734D23B49BB800A3E3F0 /* FormPage.swift */; };
 		D74985BC231634DA00C4D46D /* Window+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74985BB231634DA00C4D46D /* Window+Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,12 +86,13 @@
 		41E4DCCD22B4ADB000F78522 /* PopoverPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverPage.swift; sourceTree = "<group>"; };
 		41E4DCCF22B4B4FF00F78522 /* ActionSheetPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetPage.swift; sourceTree = "<group>"; };
 		41F36F0922AA84D600B9172D /* ButtonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPage.swift; sourceTree = "<group>"; };
-		41F36F0B22AA87AF00B9172D /* TabBarPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPage.swift; sourceTree = "<group>"; };
+		41F36F0B22AA87AF00B9172D /* TableViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewPage.swift; sourceTree = "<group>"; };
 		41F36F0D22AA8AEC00B9172D /* WebViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPage.swift; sourceTree = "<group>"; };
 		41F36F0F22AA915300B9172D /* ListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPage.swift; sourceTree = "<group>"; };
 		41FE99E622AAD08A008135A0 /* NavigationButtonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButtonPage.swift; sourceTree = "<group>"; };
 		41FE99E822AAD7B0008135A0 /* EditButtonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButtonPage.swift; sourceTree = "<group>"; };
 		41FE99EF22AADF9F008135A0 /* DatePickerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerPage.swift; sourceTree = "<group>"; };
+		BD99734D23B49BB800A3E3F0 /* FormPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPage.swift; sourceTree = "<group>"; };
 		D74985BB231634DA00C4D46D /* Window+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Window+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 			children = (
 				4132A45D22AD561500A8DBBE /* GroupPage.swift */,
 				4132A45F22AD624700A8DBBE /* SectionPage.swift */,
+				BD99734D23B49BB800A3E3F0 /* FormPage.swift */,
 			);
 			path = Container;
 			sourceTree = "<group>";
@@ -128,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				4132A46722AE8D5200A8DBBE /* NavigationViewPage.swift */,
-				41F36F0B22AA87AF00B9172D /* TabBarPage.swift */,
+				41F36F0B22AA87AF00B9172D /* TableViewPage.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -365,11 +368,12 @@
 				4161B33022AB6D2900CD5A1B /* ScrollViewPage.swift in Sources */,
 				41FE99F022AADF9F008135A0 /* DatePickerPage.swift in Sources */,
 				4161B33422AB83B700CD5A1B /* StepperPage.swift in Sources */,
-				41F36F0C22AA87AF00B9172D /* TabBarPage.swift in Sources */,
+				41F36F0C22AA87AF00B9172D /* TableViewPage.swift in Sources */,
 				4132A46B22B00E6100A8DBBE /* PickerPage.swift in Sources */,
 				4196ABCC22A97AB1008B8FD2 /* ContentView.swift in Sources */,
 				4132A46622AD70D400A8DBBE /* View+Ext.swift in Sources */,
 				415F044F22ABA1E3003E59FC /* TogglePage.swift in Sources */,
+				BD99734E23B49BB800A3E3F0 /* FormPage.swift in Sources */,
 				41F36F0E22AA8AEC00B9172D /* WebViewPage.swift in Sources */,
 				4132A46022AD624700A8DBBE /* SectionPage.swift in Sources */,
 				41C7E65E22B4A9680074D4F6 /* ModalPage.swift in Sources */,

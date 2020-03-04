@@ -1,5 +1,5 @@
 //
-//  TabBarPage.swift
+//  TabViewPage.swift
 //  Example
 //
 //  Created by 晋先森 on 2019/6/7.
@@ -8,21 +8,22 @@
 
 import SwiftUI
 
-struct TabBarPage : View {
+struct TableViewPage : View {
     
     @State private var index = 0 // 默认选中索引
-    
     let imgs = ["hot","recommend","search","tag","setting"]
     
     var body: some View {
-        
         TabView(selection: $index) {
             ForEach(0..<imgs.count) { item in
                 TabItemPage(index: item)
-                    .tabItem({Image(self.imgs[item])})
+                    .tabItem{
+                        Image(self.imgs[item])
+                        Text("\(item)")
+                }
                 .tag(item)
             }
-        }.navigationBarTitle("Tabbar")
+        }.navigationBarTitle("TabViewPage")
         
     }
 }
@@ -49,9 +50,9 @@ fileprivate struct TabItemPage: View {
 
 
 #if DEBUG
-struct TabBarPage_Previews : PreviewProvider {
+struct TableViewPage_Previews : PreviewProvider {
     static var previews: some View {
-        TabBarPage()
+        TableViewPage()
     }
 }
 #endif

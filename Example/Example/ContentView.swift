@@ -48,10 +48,6 @@ struct ContentView : View {
                     NavigationLink(destination: Text("I'm Text")) {
                         PageRow(title: "PresentationButton",subTitle: "触发时显示内容的按钮控件")
                     }
-//                    NavigationLink(PageRow(title: "PresentationButton", subTitle: "触发时显示内容的按钮控件"),
-//                                       destination: Text("I'm Text")) {
-//                                        print("Present 🦄")
-//                    }
                     NavigationLink(destination: EditButtonPage()) {
                         PageRow(title: "EditButton",subTitle: "用于切换当前编辑模式的按钮")
                     }
@@ -73,10 +69,7 @@ struct ContentView : View {
                     NavigationLink(destination: StepperPage()) {
                         PageRow(title: "Stepper",subTitle: "用以增加或减少数值")
                     }
-                    // deprecated
-//                    NavigationLink(destination: SegmentedControlPage()) {
-//                        PageRow(title: "SegmentedControl", subTitle: "用以从一组选项中进行选择")
-//                    }
+
                 }
                 
                 Section(header: Text("布局")) {
@@ -100,16 +93,19 @@ struct ContentView : View {
                     }
                     NavigationLink(destination: GroupPage()) {
                         PageRow(title: "Group",subTitle: "用于集合多个视图，对 Group 设置的属性，将作用于每个子视图")
-                        }.frame(height: 80)
+                    }.frame(height: 80)
                     NavigationLink(destination: SectionPage()) {
                         PageRow(title: "Section",subTitle: "用于创建带头/尾部的视图内容，一般结合 `List` 组件使用")
-                        }.frame(height: 80)
+                    }.frame(height: 80)
+                    NavigationLink(destination: FormPage(firstName: "", lastName: "")) {
+                           PageRow(title: "Form",subTitle: "表单视图")
+                    }
                 }
                 Section(header: Text("导航视图")) {
                     NavigationLink(destination: NavigationViewPage()) {
                         PageRow(title: "NavigationView",subTitle: "用于创建包含顶部导航栏的视图容器")
                     }
-                    NavigationLink(destination: TabBarPage()) {
+                    NavigationLink(destination: TableViewPage()) {
                         PageRow(title: "TabBar",subTitle: "用于创建包含底部 TabBar 的视图容器")
                     }
                 }
@@ -127,15 +123,15 @@ struct ContentView : View {
                         PageRow(title: "Popover",subTitle: "Pop 弹出一个视图")
                     }
                 }
-                }
-                .listStyle(GroupedListStyle())
-                .navigationBarTitle(Text("Example"), displayMode: .large)
-                .navigationBarItems(trailing: Button(action: {
-                    print("Tap")
-                }, label: {
-                    Text("Right").foregroundColor(.orange)
-                }))
-               
+            }
+            .listStyle(GroupedListStyle())
+            .navigationBarTitle(Text("Example"), displayMode: .large)
+            .navigationBarItems(trailing: Button(action: {
+                print("Tap")
+            }, label: {
+                Text("Right").foregroundColor(.orange)
+            }))
+
         }
     }
     

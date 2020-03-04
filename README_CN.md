@@ -1,6 +1,6 @@
 <img src="images/icon/banner.png"/>
 
-[![Build Status](https://img.shields.io/badge/platforms-iOS%20%7C%20tvOS%20%7C%20macOS%20%7C%20watchOS-lightgrey.svg)](https://github.com/Jinxiansen/SwiftUI)
+[![Build Status](https://img.shields.io/badge/platforms-iOS%20%7C%20tvOS%20%7C%20macOS%20%7C%20watchOS-green.svg)](https://github.com/Jinxiansen/SwiftUI)
 [![Swift](https://img.shields.io/badge/Swift-5.1-orange.svg)](https://swift.org)
 [![Xcode](https://img.shields.io/badge/Xcode-11.0-blue.svg)](https://developer.apple.com/xcode)
 [![Xcode](https://img.shields.io/badge/macOS-15.0-blue.svg)](https://developer.apple.com/macOS)
@@ -25,9 +25,9 @@
 
 ## 💻 所需环境
 
-- macOS 15 Beta
-- Xcode 11.0 Beta
-- iOS 13.0 Beta
+- macOS 15
+- Xcode 11.0
+- iOS 13.0
 
 
 ## 📂 目录：
@@ -80,10 +80,11 @@
 	- [Group](#Group)
 	- [GroupBox](#GroupBox)
 	- [Section](#Section)
+  - [Form](#Form)
 
 * <span id="Architectural_D">Architectural Views 导航、切换、排列</span>
 	- [NavigationView](#NavigationView)
-	- [TabbedView](#TabbedView)
+	- [TabView](#TabView)
 	- [HSplitView](#HSplitView)
 	- [VSplitView](#VSplitView)
 
@@ -270,7 +271,7 @@ Button(action: {
 尚未发布
 
 
-<h4 id="NavigationButton"> NavigationButton 已经弃用了</h4>
+<h4 id="NavigationButton"> NavigationButton 已弃用</h4>
 
 `NavigationButtonPage ` 用以 Push 到下一个导航页面。
 
@@ -692,6 +693,24 @@ Section(header: Text("I'm header"), footer: Text("I'm footer")) {
 <img width="80%" src="images/example/Section.png"/>
 </details>
 
+<h4 id="Form"> Form </h4>
+
+`Form` 是对一组数据输入进行控制的容器。
+
+Example:
+
+```swift
+Form {
+   TextField("First Name", text: $firstName)
+   TextField("Last Name", text: $lastName)
+}
+```
+
+<details close>
+  <summary>查看运行效果</summary>
+<img width="80%" src="images/example/Form.png"/>
+</details>
+
 [🔝](#Layout_D)
 
 <h4 id="NavigationView"> NavigationView </h4>
@@ -718,25 +737,28 @@ NavigationView {
 
 [🔝](#Layout_D)
 
-<h4 id="TabbedView"> TabbedView </h4>
+<h4 id="TabView"> TabView </h4>
 
-`TabBar` 用于创建包含底部 **TabBar** 的视图容器。
+`TabView` 用于创建包含底部 ** TabBar** 的视图容器。
 
 示例:
 
 ```swift
-TabbedView(selection: $index) {
-    ForEach(0 ..< imgs.count) { item in
+TabView(selection: $index) {
+    ForEach(0..<imgs.count) { item in
         TabItemPage(index: item)
-            .tabItemLabel(Image(self.imgs[item]))
-            .tag(item)
+            .tabItem{
+                Image(self.imgs[item])
+                Text("\(item)")
+        }
+        .tag(item)
     }
 }
 ```
 
 <details close>
   <summary>查看运行效果</summary>
-<img width="80%" src="images/example/TabBar.png"/>
+<img width="80%" src="images/example/TabView.png"/>
 </details>
 
 [🔝](#Layout_D)

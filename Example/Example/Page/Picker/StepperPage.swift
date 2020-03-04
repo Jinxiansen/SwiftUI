@@ -19,8 +19,8 @@ struct StepperPage : View {
                 print(c)
             }) {
                 Text("Stepper Value: \(self.value)")
-                }.padding(50)
-            }.navigationBarTitle(Text("Stepper"))
+            }.padding(50)
+        }.navigationBarTitle(Text("Stepper"))
     }
 }
 

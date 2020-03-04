@@ -12,15 +12,6 @@ struct ModalPage : View {
     
     @State var showModal = false
     
-//    var modal: Modal {
-//        return Modal(PickerPage(),onDismiss: {
-//            print("View Dismiss !")
-//            self.showModal = false
-//        })
-//    }
-
-
-    
     var body: some View {
         VStack {
             Button(action: {
@@ -31,7 +22,7 @@ struct ModalPage : View {
                     .font(.system(.largeTitle,
                                   design: .serif))
             }//.presentation(showModal ? modal:nil)
-//            .sheet(isPresented: $showModal, content: PickerPage())
+            //            .sheet(isPresented: $showModal, content: PickerPage())
         }
     }
 }
