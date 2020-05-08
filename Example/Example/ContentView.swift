@@ -13,6 +13,11 @@ struct ContentView : View {
     var body: some View {
         NavigationView {
             List {
+                Section(header: Text("Animation")) {
+                    NavigationLink(destination: LotteryView()) {
+                        PageRow(title: "LotteryView", subTitle: "Rotation Lottery")
+                    }
+                }
                 Section(header: Text("特殊视图")) {
                     NavigationLink(destination: WebViewPage()) {
                         PageRow(title: "WebView", subTitle: "用于展示一个打开的网页")
