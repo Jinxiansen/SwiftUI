@@ -10,14 +10,13 @@ import Foundation
 
 class LotteryControl: ObservableObject {
     @Published var rotation = 0.0
-    var index = 8
-    var angle: Double {
-        360 / Double(index)
+    let index = 8
+    var angle: Double { 360 / Double(index) }
+    
+    init() {
+        print("init runed:\(angle)")
+        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (timer) in
+            self.rotation += 30
+        }
     }
-       init() {
-           print("init runed")
-           Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (timer) in
-               self.rotation += 30
-           }
-       }
 }
