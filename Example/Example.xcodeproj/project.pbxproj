@@ -55,6 +55,7 @@
 /* Begin PBXFileReference section */
 		36F7ED9E2465231100CF20CB /* LotteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryView.swift; sourceTree = "<group>"; };
 		36F7EDA02465265200CF20CB /* LotteryControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryControl.swift; sourceTree = "<group>"; };
+		4117B81624946600000F4BF8 /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
 		4132A45D22AD561500A8DBBE /* GroupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPage.swift; sourceTree = "<group>"; };
 		4132A45F22AD624700A8DBBE /* SectionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionPage.swift; sourceTree = "<group>"; };
 		4132A46222AD709300A8DBBE /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
@@ -211,6 +212,7 @@
 		4196ABC622A97AB1008B8FD2 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				4117B81624946600000F4BF8 /* Example.entitlements */,
 				4196ABC722A97AB1008B8FD2 /* AppDelegate.swift */,
 				4196ABC922A97AB1008B8FD2 /* SceneDelegate.swift */,
 				4196ABCB22A97AB1008B8FD2 /* ContentView.swift */,
@@ -536,8 +538,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Example/Example.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "Example/Preview\\ Content";
+				DEVELOPMENT_TEAM = 3RDZ44DXB9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -546,6 +550,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinxiansen.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -555,8 +560,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Example/Example.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "Example/Preview\\ Content";
+				DEVELOPMENT_TEAM = 3RDZ44DXB9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -565,6 +572,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinxiansen.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
