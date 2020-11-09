@@ -50,6 +50,8 @@
 		41FE99F022AADF9F008135A0 /* DatePickerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE99EF22AADF9F008135A0 /* DatePickerPage.swift */; };
 		BD99734E23B49BB800A3E3F0 /* FormPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99734D23B49BB800A3E3F0 /* FormPage.swift */; };
 		D74985BC231634DA00C4D46D /* Window+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74985BB231634DA00C4D46D /* Window+Ext.swift */; };
+		E2885D872559E5CF00CF44CA /* LotteryMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2885D862559E5CF00CF44CA /* LotteryMainView.swift */; };
+		E2885D8A2559E76900CF44CA /* Delay_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2885D892559E76900CF44CA /* Delay_Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +101,8 @@
 		41FE99EF22AADF9F008135A0 /* DatePickerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerPage.swift; sourceTree = "<group>"; };
 		BD99734D23B49BB800A3E3F0 /* FormPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPage.swift; sourceTree = "<group>"; };
 		D74985BB231634DA00C4D46D /* Window+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Window+Ext.swift"; sourceTree = "<group>"; };
+		E2885D862559E5CF00CF44CA /* LotteryMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryMainView.swift; sourceTree = "<group>"; };
+		E2885D892559E76900CF44CA /* Delay_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delay_Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +119,10 @@
 		36F7ED9D246522E000CF20CB /* Lottery */ = {
 			isa = PBXGroup;
 			children = (
+				E2885D892559E76900CF44CA /* Delay_Extension.swift */,
 				36F7ED9E2465231100CF20CB /* LotteryView.swift */,
 				36F7EDA02465265200CF20CB /* LotteryControl.swift */,
+				E2885D862559E5CF00CF44CA /* LotteryMainView.swift */,
 			);
 			path = Lottery;
 			sourceTree = "<group>";
@@ -378,6 +384,7 @@
 				41F36F1022AA915300B9172D /* ListPage.swift in Sources */,
 				41F36F0A22AA84D600B9172D /* ButtonPage.swift in Sources */,
 				41FE99E722AAD08A008135A0 /* NavigationButtonPage.swift in Sources */,
+				E2885D872559E5CF00CF44CA /* LotteryMainView.swift in Sources */,
 				4160444C22B291000052CAFC /* UIKitController.swift in Sources */,
 				4196ABE222AA1B80008B8FD2 /* TextPage.swift in Sources */,
 				4160445122B2987A0052CAFC /* ControllerPage.swift in Sources */,
@@ -391,6 +398,7 @@
 				4196ABCC22A97AB1008B8FD2 /* ContentView.swift in Sources */,
 				4132A46622AD70D400A8DBBE /* View+Ext.swift in Sources */,
 				415F044F22ABA1E3003E59FC /* TogglePage.swift in Sources */,
+				E2885D8A2559E76900CF44CA /* Delay_Extension.swift in Sources */,
 				BD99734E23B49BB800A3E3F0 /* FormPage.swift in Sources */,
 				41F36F0E22AA8AEC00B9172D /* WebViewPage.swift in Sources */,
 				4132A46022AD624700A8DBBE /* SectionPage.swift in Sources */,

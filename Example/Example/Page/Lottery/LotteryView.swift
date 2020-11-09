@@ -12,24 +12,52 @@ struct LotteryView: View {
     
     @ObservedObject var control = LotteryControl()
     
-    let colors = [Color.red, .black, .gray, .green, .blue, .orange, .yellow, .purple]
-    
+    @State var rotation = 0.0
     var body: some View {
-        ZStack {
-            ForEach(0..<control.index, id: \.self) { idx in
-                Path { path in
-                    path.move(to: CGPoint(x: 150, y: 150))
-                    path.addArc(center: CGPoint(x: 150, y: 150),
-                                radius: 150,
-                                startAngle: Angle(degrees: Double(idx) * self.control.angle),
-                                endAngle: Angle(degrees: Double(idx+1) * self.control.angle),
-                                clockwise: false)
-                    path.addLine(to: CGPoint(x: 150, y: 150))
-                }.fill(self.colors[idx%self.colors.count])
+        VStack {
+        VStack {
+            VStack {
+                ZStack{
+                  
+                    LotteryMainView(gifts: $control.gifts)
+                        .frame(width: 300, height: 300, alignment: .center)
+                        .rotationEffect(.degrees(rotation))
+                        .animation(.easeInOut(duration: 5))
+                    
+                    VStack {
+
+                            Path { path in
+                                path.move(to: CGPoint(x: 0, y: 10))
+                                path.addLine(to: CGPoint(x: 5, y: 0))
+                                path.addLine(to: CGPoint(x: 10, y: 10))
+                                path.addLine(to: CGPoint(x: 0, y: 10))
+                            }.fill(Color.orange).frame(width: 10, height: 10, alignment: .top)
+
+                        VStack {
+                            Button(action: {
+                                print("xxx")
+                                self.control.startLottery()
+                            }, label: {
+                                Text("抽奖")
+                            }).frame(width: 50, height: 50, alignment: .center)
+                                .background(Color.orange)
+                                .foregroundColor(.black)
+                                .cornerRadius(25)
+                                .padding(EdgeInsets(top: -20, leading: 0, bottom: 0, trailing: 0))
+                                .disabled(!control.canLottery)
+                
+                            
+                        }.frame(width: 50, height: 50, alignment: .center)
+                    }
+                }.padding()
+            }.padding()
+        }.onReceive(control.$rotation) { (value) in
+            withAnimation {
+                self.rotation = Double(value)
             }
-        }.frame(width: 300, height: 300,
-                alignment: .center)
-            .rotationEffect(.degrees(control.rotation))
+        }
+         Text(control.giftstr)
+        }
     }
 }
 
