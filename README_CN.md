@@ -15,8 +15,7 @@
 
 [English 📔](README.md)
 
-<a href="https://github.com/Jinxiansen/Windows11"/>
-<img src="images/ad/cn.png"/>
+<a href="https://github.com/Jinxiansen/Windows11/"><img src="https://github.com/Jinxiansen/SwiftUI/blob/master/images/ad/cn.png"/></a>
 
 
 ### [Whats New in SwiftUI?](https://developer.apple.com/xcode/swiftui/)

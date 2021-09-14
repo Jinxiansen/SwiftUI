@@ -15,8 +15,8 @@ When learning and using `SwiftUI`, if you have any questions, you can join the S
 
 [中文版🇨🇳](README_CN.md)
 
-<a href="https://github.com/Jinxiansen/Windows11"/>
-<img src="images/ad/en.png"/>
+<a href="https://github.com/Jinxiansen/Windows11/"><img src="https://github.com/Jinxiansen/SwiftUI/blob/master/images/ad/en.png"/></a>
+
 
 ### ⭐️ Stargazers over time
 
