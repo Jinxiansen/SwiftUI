@@ -15,6 +15,21 @@
 
 [English 📔](README.md)
 
+<div class="warning" style='padding:0.1em;border-radius: 4px; background-color:#FFCC0040; color:#666666'>
+<span>
+
+<p style='margin-top:1em; text-align:center'>
+<a href="https://github.com/Jinxiansen/Windows11"><p style="text-align:center; font-weight: bold;">Windows 11 in SwiftUI</p></a>
+
+<p style='margin-left:1em;'>
+这是使用 <b> SwiftUI </b> 完成的 Windows 11 操作系统的 GUI 桌面。
+你可以在这里预览当前的完成度并下载 SwiftUI 源码进行查看。
+
+<p style='margin-bottom:1em; margin-right:1em; text-align:right;'><i><b> 推荐给 SwiftUI 的忠实粉丝。</b></i>
+</p>
+</span>
+</div>
+
 ### [Whats New in SwiftUI?](https://developer.apple.com/xcode/swiftui/)
 
 

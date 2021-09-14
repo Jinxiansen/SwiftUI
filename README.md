@@ -15,6 +15,21 @@ When learning and using `SwiftUI`, if you have any questions, you can join the S
 
 [中文版🇨🇳](README_CN.md)
 
+<div class="warning" style='padding:0.1em;border-radius: 4px; background-color:#FFCC0040; color:#666666'>
+<span>
+
+<p style='margin-top:1em; text-align:center'>
+<a href="https://github.com/Jinxiansen/Windows11"><p style="text-align:center; font-weight: bold;">Windows 11 in SwiftUI</p></a>
+
+<p style='margin-left:1em;'>
+This is the GUI desktop of the Windows 11 operating system completed with <b> SwiftUI </b>.
+You can preview the current degree of completion here and download the SwiftUI source code for viewing.
+
+<p style='margin-bottom:1em; margin-right:1em; text-align:right;'><i><b> Recommend to the loyal fans of SwiftUI</b></i>
+</p>
+</span>
+</div>
+
 ### ⭐️ Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/Jinxiansen/SwiftUI.svg)](https://starchart.cc/Jinxiansen/SwiftUI)
