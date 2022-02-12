@@ -24,7 +24,7 @@ When learning and using `SwiftUI`, if you have any questions, you can join the S
 
 ### 💻 Requirements
 
-- macOS 15
+- macOS 10.15
 - Xcode 11.0
 - iOS 13.0
 
