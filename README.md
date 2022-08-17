@@ -376,7 +376,7 @@ Example:
 `Toggle` is used to switch the selected state, for example:
 
 ```swift
-Togglele(isOn: $isOn) {
+Toggle(isOn: $isOn) {
     Text("State: \(self.isOn == true ? "Open":"open")")
 }.padding(20)
 ```
