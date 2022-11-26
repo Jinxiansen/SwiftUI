@@ -152,6 +152,7 @@ With chained syntax, you can also add multiple attributes to the text, such as f
 Example:
 
 ```swift
+
 Text("SwiftUI")
     .foregroundColor(.orange)
     .bold()
@@ -159,6 +160,7 @@ Text("SwiftUI")
     .fontWeight(.medium)
     .italic()
     .shadow(color: .black, radius: 1, x: 0, y: 2)
+
 ```
 
 <details close>
@@ -209,11 +211,13 @@ TextField(self.$name, placeholder: self.nameText, onEditingChanged: { changed in
 The `Image` control is used to display images, example:
 
 ```swift
+
 Image("icon")
     .resizable()
     .frame(width: 100,
            height: 100,
            alignment: .center)
+
 ```
 
 <details close>
@@ -230,6 +234,7 @@ Image("icon")
 Example：
 
 ```swift
+
 var body: some View {
         Image(uiImage: self.uiImage ?? placeholderImage)
             .resizable()
@@ -241,6 +246,7 @@ var body: some View {
                 print("Tap ")
         }
     }
+
 ```
 
 <details close>
@@ -257,11 +263,13 @@ var body: some View {
 Example:
 
 ```swift
+
 Button(action: {
     print("Tap")
 }) {
    Text("I'm a Button")
 }
+
 ```
 <details close>
   <summary>View running results</summary>
@@ -286,12 +294,14 @@ Waiting for release.
 Example:
 
 ```swift
+
 NavigationLink(destination: NavigationButtonPage()) {
             Text("NavigationButton").bold()
                 .foregroundColor(.orange)
                 .font(.largeTitle)
             }
     .navigationBarTitle(Text("Page"))
+
 ```     
 
 <details close>
@@ -315,7 +325,9 @@ NavigationLink(destination: NavigationButtonPage()) {
 Example:
 
 ```swift
+
 navigationBarItems(trailing: EditButton())
+
 ```     
 
 <details close>
@@ -337,11 +349,13 @@ Waiting for release.
 Example:
 
 ```swift
+
 Picker(selection: $leftIndex, label: Text("Picker")) {
     ForEach(0..<leftSource.count) {
         Text(self.leftSource[$0]).tag($0)
     }
     }.frame(width: UIScreen.main.bounds.width/2)
+
 ```     
 
 <details close>
@@ -359,11 +373,12 @@ Example:
 
 ```swift
 
-                DatePicker(selection: $server.date, 
-                in: server.spaceDate, 
-                displayedComponents: .date, label: {
-                    Text("")
-                })
+DatePicker(selection: $server.date, 
+in: server.spaceDate, 
+displayedComponents: .date, label: {
+    Text("")
+})
+
 ```     
 
 <details close>
@@ -378,9 +393,11 @@ Example:
 `Toggle` is used to switch the selected state, for example:
 
 ```swift
+
 Toggle(isOn: $isOn) {
     Text("State: \(self.isOn == true ? "Open":"open")")
 }.padding(20)
+
 ```
 
 <details close>
@@ -395,7 +412,9 @@ Toggle(isOn: $isOn) {
 `Slider ` A control for selecting values from a finite range of values, example:
 
 ```swift
+
 Slider(value: $data.rating)
+
 ```     
 
 <details close>
@@ -410,11 +429,13 @@ Slider(value: $data.rating)
 `Stepper ` is used to increase or decrease the value, example:
 
 ```swift
+
 Stepper(value: $value, step: 2, onEditingChanged: { c in
     print(c)
 }) {
     Text("Stepper Value: \(self.value)")
     }.padding(50)
+
 ```
 
 <details close>
@@ -429,6 +450,7 @@ Stepper(value: $value, step: 2, onEditingChanged: { c in
 `SegmentedControl ` is used for segmentation condition selection, example:
 
 ```swift
+
 SegmentedControl(selection: $currentIndex) {
     ForEach(0..<items.count) { index in
         Text(self.items[index]).tag(index)
@@ -436,6 +458,7 @@ SegmentedControl(selection: $currentIndex) {
     }.tapAction {
         print("currentIndex: \(self.currentIndex)")
 }
+
 ```
 
 <details close>
@@ -450,6 +473,7 @@ SegmentedControl(selection: $currentIndex) {
 `WebView` is used to display an open web page, example:
 
 ```swift
+
 struct WebViewPage : UIViewRepresentable {
     func makeUIView(context: Context) -> WKWebView  {
         return WKWebView()
@@ -459,6 +483,7 @@ struct WebViewPage : UIViewRepresentable {
         uiView.load(req)
     }
 }
+
 ```
 
 <details close>
@@ -477,6 +502,7 @@ Example:
 First define:
 
 ```swift
+
 struct ControllerPage<T: UIViewController> : UIViewControllerRepresentable {
     
     typealias UIViewControllerType = UIViewController
@@ -490,15 +516,18 @@ struct ControllerPage<T: UIViewController> : UIViewControllerRepresentable {
     }
     
 }
+
 ```
 
 Then use this:
 
 ```swift
+
 NavigationButton(destination: ControllerPage<UIKitController>()) {
     PageRow(title: "UIViewController",subTitle: "Open UIViewController")
 
 }
+
 ```
 
 
@@ -521,11 +550,13 @@ NavigationButton(destination: ControllerPage<UIKitController>()) {
 Example:
 
 ```swift
+
 HStack {
     Text("made in China.")
     Divider() // Just add a line.
     Text("the People's Republic Of China.")
 }
+
 ```
 
 <details close>
@@ -542,11 +573,13 @@ HStack {
 Example:
 
 ```swift
+
 VStack {
     Text("made in China.")
     Divider() // Just add a line.
     Text("the People's Republic Of China.")
 }
+
 ```
 
 <details close>
@@ -563,11 +596,13 @@ VStack {
 Example:
 
 ```swift
+
 ZStack {
     Text("made in China.")
     Divider() // Just add a line.
     Text("the People's Republic Of China.")
 }
+
 ```
 
 <details close>
@@ -584,9 +619,11 @@ ZStack {
 Examples:
 
 ```swift
+
 List(0..<5) { item in
     Text("Hello World !")
 }.navigationBarTitle(Text("List"), displayMode: .large)
+
 ```
 
 <details close>
@@ -603,6 +640,7 @@ List(0..<5) { item in
 Example:
 
 ```swift
+
 ScrollView {
     Text("SwiftUI").padding(20)
     Divider()
@@ -615,6 +653,7 @@ ScrollView {
             .cornerRadius(10)
             .padding(10)
             .navigationBarTitle(Text("ScrollView"))
+
 ```
 
 <details close>
@@ -631,6 +670,7 @@ ScrollView {
 Example:
 
 ```swift
+
 let data = (0..<5)
 var body: some View {
     ForEach(data) { e in
@@ -639,6 +679,7 @@ var body: some View {
             .font(.system(size: 25, design: .monospaced))
             .padding(5)
 }
+
 ```
 
 <details close>
@@ -655,10 +696,12 @@ var body: some View {
 Example:
 
 ```swift
+
 Group {
-    Text("Hello World !")
-    Text("Hello World !")
-    }
+        Text("Hello World !")
+        Text("Hello World !")
+      }
+
 ```
 
 <details close>
@@ -680,11 +723,13 @@ Waiting for release.
 Example:
 
 ```swift
+
 Section(header: Text("I'm header"), footer: Text("I'm footer")) {
     ForEach(0..<3) {
         Text("Hello \($0)")
     }
 }
+
 ```
 
 <details close>
@@ -699,6 +744,7 @@ Section(header: Text("I'm header"), footer: Text("I'm footer")) {
 Example:
 
 ```swift
+
 Form {
    TextField("First Name", text: $firstName)
    TextField("Last Name", text: $lastName)
@@ -719,6 +765,7 @@ Form {
 Example:
 
 ```swift
+
 NavigationView {
             Text("🧚‍♂️🧚‍♀️🧜‍♂️🧜‍♀️🧞‍♂️🧞‍♀️").blur(radius: 5)
             Text("Swifter Swifter")
@@ -743,6 +790,7 @@ NavigationView {
 Example:
 
 ```swift
+
 TabView(selection: $index) {
     ForEach(0..<imgs.count) { item in
         TabItemPage(index: item)
@@ -779,6 +827,7 @@ Waiting for release.
 Example:
 
 ```swift
+
 alert(isPresented: $showAlert, content: {
             Alert(title: Text("确定要支付这100000000美元吗？"),
                   message: Text("请谨慎操作\n一旦确认，钱款将立即转入对方账户"),
@@ -802,6 +851,7 @@ alert(isPresented: $showAlert, content: {
 Example:
 
 ```swift
+
 ActionSheet(title: Text("Title"),
             message: Text("Message"),
             buttons:
@@ -818,8 +868,11 @@ ActionSheet(title: Text("Title"),
 ```
 
 usage：
+
 ```swift 
+
 .actionSheet(isPresented: $showSheet, content: {sheet})
+
 ```
 <details close>
   <summary>View running results</summary>
@@ -836,9 +889,11 @@ usage：
 Example:
 
 ```swift
+
 Modal(Text("Modal View"),onDismiss: {
     print("View Dismiss !")
 })
+
 ```
 
 <details close>
@@ -856,9 +911,11 @@ Modal(Text("Modal View"),onDismiss: {
 Example:
 
 ```swift
+
 .popover(isPresented: $showPop, content: {
                 ImagePage()
-            })
+        })
+
 ```
 
 <details close>
