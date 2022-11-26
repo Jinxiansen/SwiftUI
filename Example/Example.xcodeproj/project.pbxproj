@@ -50,6 +50,7 @@
 		41FE99F022AADF9F008135A0 /* DatePickerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE99EF22AADF9F008135A0 /* DatePickerPage.swift */; };
 		BD99734E23B49BB800A3E3F0 /* FormPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD99734D23B49BB800A3E3F0 /* FormPage.swift */; };
 		D74985BC231634DA00C4D46D /* Window+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74985BB231634DA00C4D46D /* Window+Ext.swift */; };
+		FC8DE9B929309F3D00A5C8FF /* SpacerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8DE9B829309F3D00A5C8FF /* SpacerPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		41FE99EF22AADF9F008135A0 /* DatePickerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerPage.swift; sourceTree = "<group>"; };
 		BD99734D23B49BB800A3E3F0 /* FormPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPage.swift; sourceTree = "<group>"; };
 		D74985BB231634DA00C4D46D /* Window+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Window+Ext.swift"; sourceTree = "<group>"; };
+		FC8DE9B829309F3D00A5C8FF /* SpacerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				41F36F0D22AA8AEC00B9172D /* WebViewPage.swift */,
 				4160445022B2987A0052CAFC /* ControllerPage.swift */,
 				4160444B22B291000052CAFC /* UIKitController.swift */,
+				FC8DE9B829309F3D00A5C8FF /* SpacerPage.swift */,
 			);
 			path = SpecialPage;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				36F7ED9F2465231100CF20CB /* LotteryView.swift in Sources */,
 				4196ABE722AA268A008B8FD2 /* TextFieldPage.swift in Sources */,
 				4161B32722AB68F600CD5A1B /* HStackPage.swift in Sources */,
+				FC8DE9B929309F3D00A5C8FF /* SpacerPage.swift in Sources */,
 				D74985BC231634DA00C4D46D /* Window+Ext.swift in Sources */,
 				4164489D22AA6D6500A93AF2 /* ImagePage.swift in Sources */,
 				4161B32922AB695A00CD5A1B /* VStackPage.swift in Sources */,

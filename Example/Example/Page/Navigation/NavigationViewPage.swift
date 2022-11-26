@@ -28,7 +28,7 @@ struct NavigationViewPage : View {
 }
 
 #if DEBUG
-struct SpacerPage_Previews : PreviewProvider {
+struct NavigationViewPage_Previews : PreviewProvider {
     static var previews: some View {
         NavigationViewPage()
     }

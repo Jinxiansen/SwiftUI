@@ -25,6 +25,9 @@ struct ContentView : View {
                     NavigationLink(destination: ControllerPage<UIKitController>()) {
                         PageRow(title: "UIViewController", subTitle: "打开 UIViewController")
                     }
+                    NavigationLink(destination: SpacerPage()) {
+                        PageRow(title: "Spacer", subTitle: "一个空白占用视图,为了方便展示,已用黄色标出")
+                    }
                 }
                 Section(header: Text("基础控件")) {
                     NavigationLink(destination: TextPage()) {
