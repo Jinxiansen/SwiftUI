@@ -52,6 +52,7 @@ struct ContentView : View {
                     }
                     NavigationLink(destination: NavigationButtonPage()) {
                         PageRow(title: "NavigationButton",subTitle: "按下时触发导航跳转的按钮")
+                        PageRow(title: "NavigationButton",subTitle: "按下时触发导航跳转的按钮")
                     }
                     NavigationLink(destination: Text("I'm Text")) {
                         PageRow(title: "PresentationButton",subTitle: "触发时显示内容的按钮控件")
@@ -107,6 +108,9 @@ struct ContentView : View {
                     }.frame(height: 80)
                     NavigationLink(destination: FormPage(firstName: "", lastName: "")) {
                            PageRow(title: "Form",subTitle: "表单视图")
+                    }
+                    NavigationLink(destination: MenuPage()) {
+                           PageRow(title: "Menu",subTitle: "Menu Page")
                     }
                 }
                 Section(header: Text("导航视图")) {
