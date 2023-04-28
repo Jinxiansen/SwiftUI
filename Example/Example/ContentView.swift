@@ -52,7 +52,6 @@ struct ContentView : View {
                     }
                     NavigationLink(destination: NavigationButtonPage()) {
                         PageRow(title: "NavigationButton",subTitle: "按下时触发导航跳转的按钮")
-                        PageRow(title: "NavigationButton",subTitle: "按下时触发导航跳转的按钮")
                     }
                     NavigationLink(destination: Text("I'm Text")) {
                         PageRow(title: "PresentationButton",subTitle: "触发时显示内容的按钮控件")
