@@ -108,9 +108,6 @@ struct ContentView : View {
                     NavigationLink(destination: FormPage(firstName: "", lastName: "")) {
                            PageRow(title: "Form",subTitle: "表单视图")
                     }
-                    NavigationLink(destination: MenuPage()) {
-                           PageRow(title: "Menu",subTitle: "Menu Page")
-                    }
                 }
                 Section(header: Text("导航视图")) {
                     NavigationLink(destination: NavigationViewPage()) {
